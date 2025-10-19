@@ -1,16 +1,13 @@
-package trainaddon.common.core.handler;
+package tcmodern.common.core.handler;
 
-import trainaddon.common.FoxTCAddonPack;
+import tcmodern.common.TCModernFoxTC;
 
-public class AddonPackRollingStockEntityHandler
-{
-    private Object Instance()
-    {
-        return FoxTCAddonPack.instance;
+public class TCModernRollingStockEntityHandler {
+    private Object Instance() {
+        return TCModernFoxTC.instance;
     }
 
-    public AddonPackRollingStockEntityHandler()
-    {
+    public TCModernRollingStockEntityHandler() {
         /* Sample
 
         Traincraft.traincraftRegistry

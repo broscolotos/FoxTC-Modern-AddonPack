@@ -1,2 +1,2 @@
-# FoxTC-Template-AddonPack
-Template pack for making train addons to foxtc (Only Compatible FoxTC)
+# TCModern-FoxTC-AddonPack
+FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH FoxTC**

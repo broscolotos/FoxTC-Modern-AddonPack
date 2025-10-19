@@ -1,14 +1,12 @@
-package trainaddon.common.core.handler;
+package tcmodern.common.core.handler;
 
-import trainaddon.common.library.Info;
+import tcmodern.common.library.Info;
 
-public class AddonPackRollingStockModelHandler
-{
+public class TCModernRollingStockModelHandler {
     /**
      * Only setup Model Register calls from here or you will crash the server.
      */
-    public AddonPackRollingStockModelHandler()
-    {
+    public TCModernRollingStockModelHandler() {
         final String ModID = Info.modID;
         /* SAMPLE
         Traincraft.traincraftRegistry

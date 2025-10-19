@@ -1,4 +1,4 @@
-package trainaddon.common.library;
+package tcmodern.common.library;
 
 import net.minecraft.item.Item;
 import train.common.library.TypeOfRollingStock;
@@ -9,8 +9,7 @@ import static train.common.library.TypeOfRollingStock.*;
  * Enum class for the Rolling stock item
  * DO NOT ADD OTHER ITEMS BESIDES ROLLING STOCK ITEMS HERE
  */
-public enum AddonRollingStockItems
-{
+public enum TCModernRollingStockItems {
     //minecraftTemplate("template-icon", STEAM, 100),
     //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
@@ -21,8 +20,7 @@ public enum AddonRollingStockItems
      * @param typeOfRollingStock the type of rollingstock
      * @param amountForEmerald amount for Emerald
      */
-    AddonRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald)
-    {
+    TCModernRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald) {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
         this.amountForEmerald = (byte) amountForEmerald;
@@ -33,8 +31,7 @@ public enum AddonRollingStockItems
      * @param typeOfRollingStock the type of rollingstock
      */
 
-    AddonRollingStockItems(String iconName, TypeOfRollingStock typeOfRollingStock)
-    {
+    TCModernRollingStockItems(String iconName, TypeOfRollingStock typeOfRollingStock) {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
         this.amountForEmerald = -1;
