@@ -1,4 +1,4 @@
-package train.common.library;
+package trainaddon.common.library;
 
 import train.common.items.ItemRollingStock;
 

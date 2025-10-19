@@ -1,6 +1,8 @@
-package train.common.library;
+package trainaddon.common.library;
 
 import net.minecraft.item.Item;
+import train.common.library.TypeOfRollingStock;
+
 import static train.common.library.TypeOfRollingStock.*;
 
 /**
@@ -9,8 +11,8 @@ import static train.common.library.TypeOfRollingStock.*;
  */
 public enum AddonRollingStockItems
 {
-    minecraftTemplate("template-icon", STEAM, 100),
-    minecraftTemplateUntradeable("template-icon", STEAM)
+    //minecraftTemplate("template-icon", STEAM, 100),
+    //minecraftTemplateUntradeable("template-icon", STEAM)
     ;
 
 
@@ -19,7 +21,7 @@ public enum AddonRollingStockItems
      * @param typeOfRollingStock the type of rollingstock
      * @param amountForEmerald amount for Emerald
      */
-    AddonRollingStockItems(String iconName, TypeOfRollingStock typeOfRollingStock, int amountForEmerald)
+    AddonRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald)
     {
         this.iconName = iconName;
         TypeOfRollingStock = typeOfRollingStock;
