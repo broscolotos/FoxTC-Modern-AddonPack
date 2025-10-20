@@ -2,7 +2,7 @@
 <!-- ## Only replace the words on the right side of "=" ## -->
 <!-- ## Save the file the same way this file was saved but replace "en_US" with appropriate language name ## -->
 
-item.tc:minecartTemplate.name=Template Train
+item.l3aMohawk.name=L3a Mohawk
 
 <!-- ## ENTITY ## -->
-entity.tc.EntityTemplate.name=Template 
+entity.tcmodern.L3a Mohawk.name=L3a Mohawk

@@ -5,16 +5,24 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public final class CreativeTabTCModern extends CreativeTabs {
-	private final Item itemForIcon;
+	private Item itemForIcon;
 
 	public CreativeTabTCModern(int tabID, String tabName, Item tabIcon) {
 		super(tabID, tabName);
 		setBackgroundImageName("item_search.png");
-		itemForIcon = tabIcon;
+		setIconItemStack(tabIcon);
+	}
+
+	public CreativeTabTCModern(int tabID, String tabName) {
+		super(tabID, tabName);
+		setBackgroundImageName("item_search.png");
 	}
 
 	@Override
 	public boolean hasSearchBar() { return true; }
+
+
+	public void setIconItemStack(Item tabItem) { this.itemForIcon = tabItem; }
 
 	@Override
 	public ItemStack getIconItemStack() { return new ItemStack(itemForIcon); }

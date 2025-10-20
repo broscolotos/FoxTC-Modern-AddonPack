@@ -12,6 +12,7 @@ import static train.common.library.TypeOfRollingStock.*;
 public enum TCModernRollingStockItems {
     //minecraftTemplate("template-icon", STEAM, 100),
     //minecraftTemplateUntradeable("template-icon", STEAM)
+    l3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk");
     ;
 
 
@@ -22,6 +23,13 @@ public enum TCModernRollingStockItems {
      */
     TCModernRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald) {
         this.iconName = iconName;
+        TypeOfRollingStock = typeOfRollingStock;
+        this.amountForEmerald = (byte) amountForEmerald;
+    }
+
+    TCModernRollingStockItems(String iconName, train.common.library.TypeOfRollingStock typeOfRollingStock, int amountForEmerald, String itemName) {
+        this.iconName = iconName;
+        this.itemName = itemName;
         TypeOfRollingStock = typeOfRollingStock;
         this.amountForEmerald = (byte) amountForEmerald;
     }
@@ -37,7 +45,15 @@ public enum TCModernRollingStockItems {
         this.amountForEmerald = -1;
     }
 
+    TCModernRollingStockItems(String iconName, TypeOfRollingStock typeOfRollingStock, String name) {
+        this.iconName = iconName;
+        this.itemName = name;
+        TypeOfRollingStock = typeOfRollingStock;
+        this.amountForEmerald = -1;
+    }
+
     public Item item;
+    public String itemName;
     public final String iconName;
     public final TypeOfRollingStock TypeOfRollingStock;
 

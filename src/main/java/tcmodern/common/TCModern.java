@@ -8,31 +8,33 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tcmodern.common.core.handler.TCModernRollingStockEntityHandler;
+import tcmodern.common.creativetabs.CreativeTabTCModern;
 import tcmodern.common.library.Info;
+import tcmodern.common.library.TCModernRollingStockItems;
 
 
 @Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion, dependencies = "required-after:tc")
-public class TCModernFoxTC {
+public class TCModern {
     /* TCModern instance */
     @Instance(Info.modID)
-    public static TCModernFoxTC instance;
+    public static TCModern instance;
 
     /* TCModern Logger */
     public static Logger addonLog = LogManager.getLogger(Info.modName);
 
-    public static CreativeTabs tcModernTab;
+    public static CreativeTabTCModern tcModernTab;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         addonLog.info("preInit Addon Pack -" + Info.modName);
-        tcModernTab = new tcmodern.common.creativetabs.CreativeTabTCModern(CreativeTabs.getNextID(), "TC Modern", Items.apple); //TODO: change item
+        tcModernTab = new tcmodern.common.creativetabs.CreativeTabTCModern(CreativeTabs.getNextID(), "TC Modern");
 
         tcmodern.common.library.TCModernItems tcModernItems = new tcmodern.common.library.TCModernItems();
         TCModernRollingStockEntityHandler entityHandler = new TCModernRollingStockEntityHandler();
+        tcModernTab.setIconItemStack(TCModernRollingStockItems.l3aMohawk.item);
 
         if (FMLCommonHandler.instance().getEffectiveSide().isClient()) {
             new tcmodern.common.core.handler.TCModernRollingStockModelHandler();

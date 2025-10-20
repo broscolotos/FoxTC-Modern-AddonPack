@@ -1,11 +1,14 @@
 package tcmodern.common.core.handler;
 
-import tcmodern.common.TCModernFoxTC;
+import tcmodern.common.TCModern;
+import tcmodern.common.entities.steam.EntityL3aMohawk;
+import tcmodern.common.library.TCModernRollingStockItems;
+import train.common.Traincraft;
+import train.common.library.EnumTrainType;
+import train.common.library.register.TrainRecord;
 
 public class TCModernRollingStockEntityHandler {
-    private Object Instance() {
-        return TCModernFoxTC.instance;
-    }
+    private Object Instance() { return TCModern.instance; }
 
     public TCModernRollingStockEntityHandler() {
         /* Sample
@@ -21,5 +24,14 @@ public class TCModernRollingStockEntityHandler {
          */
 
         // Put Calls to RegisterRollingStockEntity below this.
+
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.l3aMohawk.item,
+                new TrainRecord("L3a Mohawk", EntityL3aMohawk.class, TCModernRollingStockItems.l3aMohawk.item,
+                        EnumTrainType.Steam, 0, new String[] {"White", "LightGrey", "Black", "Grey", "Blue", "LightBlue"}, 7,
+                        0, 97, 164, 4120, 60, 160,
+                        0.65, -5, 10000, 200),
+                Instance()
+        );
     }
 }

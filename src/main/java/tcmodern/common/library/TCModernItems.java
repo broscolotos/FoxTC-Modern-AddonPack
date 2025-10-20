@@ -1,6 +1,8 @@
 package tcmodern.common.library;
 
-import train.common.items.ItemRollingStock;
+import cpw.mods.fml.common.registry.GameRegistry;
+import tcmodern.common.TCModern;
+import train.common.items.ItemAbstractRollingStock;
 
 public class TCModernItems {
     /**
@@ -9,8 +11,9 @@ public class TCModernItems {
     public TCModernItems() { loadRollingStockItems(); }
 
     private void loadRollingStockItems() {
-        for (TCModernRollingStockItems item : TCModernRollingStockItems.values()) {
-            item.item = new ItemRollingStock(item.iconName, item.TypeOfRollingStock);
+        for (final TCModernRollingStockItems item : TCModernRollingStockItems.values()) {
+            item.item = new ItemTCModernRollingStock(item.iconName, item.itemName);
+            GameRegistry.registerItem(item.item, item.name());
         }
     }
 }
