@@ -42,7 +42,7 @@ public class EntityL3aMohawk  extends SteamTrain {
 
     //coupling distance
     @Override
-    public float getOptimalDistance(EntityMinecart cart) { return 0.6F; }
+    public float getOptimalDistance(EntityMinecart cart) { return 1.15F; }
 
     @Override
     public void updateRiderPosition() {

@@ -2,6 +2,9 @@ package tcmodern.common.core.handler;
 
 import tcmodern.common.TCModern;
 import tcmodern.common.entities.steam.EntityL3aMohawk;
+import tcmodern.common.entities.tender.EntityNYC40ft3inTender;
+import tcmodern.common.entities.tender.EntityNYC46ft4inTender;
+import tcmodern.common.entities.tender.EntityNYCPT2Tender;
 import tcmodern.common.library.TCModernRollingStockItems;
 import train.common.Traincraft;
 import train.common.library.EnumTrainType;
@@ -31,6 +34,27 @@ public class TCModernRollingStockEntityHandler {
                         EnumTrainType.Steam, 0, new String[] {"White", "LightGrey", "Black", "Grey", "Blue", "LightBlue"}, 7,
                         0, 97, 164, 4120, 60, 160,
                         0.65, -5, 10000, 200),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NYC46ft4inTender.item,
+                new TrainRecord("NYC 46ft 4in Tender", EntityNYC46ft4inTender.class, TCModernRollingStockItems.NYC46ft4inTender.item,
+                        "tender", 2, new String[]{"Black"}, 18,
+                        0, 0, 0, 0, 0, 0, 0, 0, 20000, 0),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NYC40ft3inTender.item,
+                new TrainRecord("NYC 40ft 3in Tender", EntityNYC40ft3inTender.class, TCModernRollingStockItems.NYC40ft3inTender.item,
+                        "tender", 2, new String[]{"Black"}, 18,
+                        0, 0, 0, 0, 0, 0, 0, 0, 24000, 0),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NYCPT2Tender.item,
+                new TrainRecord("NYC PT2 Tender", EntityNYCPT2Tender.class, TCModernRollingStockItems.NYCPT2Tender.item,
+                        "tender", 2, new String[]{"Black"}, 18,
+                        0, 0, 0, 0, 0, 0, 0, 0, 32000, 0),
                 Instance()
         );
     }

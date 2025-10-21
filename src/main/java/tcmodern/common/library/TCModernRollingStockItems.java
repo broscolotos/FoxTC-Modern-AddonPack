@@ -12,7 +12,10 @@ import static train.common.library.TypeOfRollingStock.*;
 public enum TCModernRollingStockItems {
     //minecraftTemplate("template-icon", STEAM, 100),
     //minecraftTemplateUntradeable("template-icon", STEAM)
-    l3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk");
+    l3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk"),
+    NYC46ft4inTender("tender/NYC46ft", FREIGHT, "NYC46ft4inTender"),
+    NYC40ft3inTender("tender/NYC46ft", FREIGHT, "NYC40ft3inTender"),
+    NYCPT2Tender("tender/NYCPT2", FREIGHT, "NYCPT2Tender"),
     ;
 
 

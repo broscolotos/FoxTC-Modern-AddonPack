@@ -3,6 +3,8 @@
 <!-- ## Save the file the same way this file was saved but replace "en_US" with appropriate language name ## -->
 
 item.l3aMohawk.name=L3a Mohawk
+item.NYC46ft4inTender.name=NYC 46ft 4in Tender
 
 <!-- ## ENTITY ## -->
 entity.tcmodern.L3a Mohawk.name=L3a Mohawk
+entity.tcmodern.NYC 46ft 4in Tender.name=NYC 46ft 4in Tender
