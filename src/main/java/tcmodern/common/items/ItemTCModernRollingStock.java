@@ -1,15 +1,14 @@
-package tcmodern.common.library;
+package tcmodern.common.items;
 
 import tcmodern.common.TCModern;
+import tcmodern.common.library.Info;
 import train.common.items.ItemAbstractRollingStock;
-import train.common.library.TypeOfRollingStock;
 
 public class ItemTCModernRollingStock extends ItemAbstractRollingStock {
 
-    public ItemTCModernRollingStock(String iconName, String name) {
+    public ItemTCModernRollingStock(String iconName) {
         super(iconName);
         setCreativeTab(TCModern.tcModernTab);
-        this.setUnlocalizedName(name);
     }
 
     @Override

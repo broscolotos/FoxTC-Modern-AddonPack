@@ -1,19 +1,21 @@
 package tcmodern.common.library;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import tcmodern.common.TCModern;
-import train.common.items.ItemAbstractRollingStock;
+import tcmodern.common.items.ItemTCModernRollingStock;
 
 public class TCModernItems {
     /**
      * Setup all items
      */
-    public TCModernItems() { loadRollingStockItems(); }
+    public TCModernItems() {
+        loadRollingStockItems();
+    }
 
     private void loadRollingStockItems() {
         for (final TCModernRollingStockItems item : TCModernRollingStockItems.values()) {
-            item.item = new ItemTCModernRollingStock(item.iconName, item.itemName);
-            GameRegistry.registerItem(item.item, item.name());
+            item.item = new ItemTCModernRollingStock(item.iconName);
+            item.item.setUnlocalizedName(Info.modID + ":" + item.itemName);
+            GameRegistry.registerItem(item.item, item.itemName);
         }
     }
 }

@@ -2,9 +2,13 @@
 <!-- ## Only replace the words on the right side of "=" ## -->
 <!-- ## Save the file the same way this file was saved but replace "en_US" with appropriate language name ## -->
 
-item.l3aMohawk.name=L3a Mohawk
-item.NYC46ft4inTender.name=NYC 46ft 4in Tender
+item.tcmodern:l3aMohawk.name=L3a Mohawk
+item.tcmodern:NYC46ft4inTender.name=NYC 46ft 4in Tender
+item.tcmodern:NYC40ft3inTender.name=NYC 40ft 3in Tender
+item.tcmodern:NYCPT2Tender.name=NYC PT2 Tender
 
 <!-- ## ENTITY ## -->
 entity.tcmodern.L3a Mohawk.name=L3a Mohawk
 entity.tcmodern.NYC 46ft 4in Tender.name=NYC 46ft 4in Tender
+entity.tcmodern.NYC 40ft 3in Tender.name=NYC 40ft 3in Tender
+entity.tcmodern.NYC PT2 Tender.name=NYC PT2 Tender

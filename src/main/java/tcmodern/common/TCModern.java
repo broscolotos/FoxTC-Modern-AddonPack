@@ -12,8 +12,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tcmodern.common.core.handler.TCModernRollingStockEntityHandler;
 import tcmodern.common.creativetabs.CreativeTabTCModern;
+import tcmodern.common.library.TCModernItems;
 import tcmodern.common.library.Info;
 import tcmodern.common.library.TCModernRollingStockItems;
+import tcmodern.common.library.TCModernTableRecipeRegistry;
 
 
 @Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion, dependencies = "required-after:tc")
@@ -32,13 +34,15 @@ public class TCModern {
         addonLog.info("preInit Addon Pack -" + Info.modName);
         tcModernTab = new tcmodern.common.creativetabs.CreativeTabTCModern(CreativeTabs.getNextID(), "TC Modern");
 
-        tcmodern.common.library.TCModernItems tcModernItems = new tcmodern.common.library.TCModernItems();
+        TCModernItems tcModernItems = new TCModernItems();
         TCModernRollingStockEntityHandler entityHandler = new TCModernRollingStockEntityHandler();
         tcModernTab.setIconItemStack(TCModernRollingStockItems.l3aMohawk.item);
 
         if (FMLCommonHandler.instance().getEffectiveSide().isClient()) {
             new tcmodern.common.core.handler.TCModernRollingStockModelHandler();
         }
+
+        new TCModernTableRecipeRegistry();
     }
 
     @EventHandler

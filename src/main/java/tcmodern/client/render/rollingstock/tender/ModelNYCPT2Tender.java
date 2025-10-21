@@ -30,6 +30,11 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		initGroup_clipboard();
 		initGroup_PaintingStuff();
 		initGroup_FrameS2();
+		for (TurboList l : groups) {
+			ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+			l.toArray(arr);
+			fixRotation(arr, true, true, true);
+		}
 	}
 
 	private final void initGroup_CoalOverflow(){
