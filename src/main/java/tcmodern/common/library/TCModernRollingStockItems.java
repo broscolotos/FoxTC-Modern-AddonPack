@@ -16,6 +16,8 @@ public enum TCModernRollingStockItems {
     NYC46ft4inTender("tender/NYC46ft", FREIGHT, "NYC46ft4inTender"),
     NYC40ft3inTender("tender/NYC46ft", FREIGHT, "NYC40ft3inTender"),
     NYCPT2Tender("tender/NYCPT2", FREIGHT, "NYCPT2Tender"),
+    HeavyweightTailCar("passenger/heavyweightTail", PASSENGER, "HeavyweightTailCar"),
+    HeavyweightColonistCar("passenger/heavyweightColonist", PASSENGER, "HeavyweightColonistCar"),
     ;
 
 

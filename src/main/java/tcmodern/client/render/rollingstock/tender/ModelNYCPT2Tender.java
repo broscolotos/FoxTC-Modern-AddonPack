@@ -75,6 +75,10 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 			.addShapeBox(0, 0, 0, 2, 0, 1, 0, 0, 0, 0, -0.75f, -1.25f, 0, -1.75f, -1.25f, 0.5f, 1.5f, 0, 0.5f, 0, 0, 0, -0.75f, 1.25f, 0, -1.75f, 1.25f, 0.5f, 1.5f, 0, 0.5f)
 			.setRotationPoint(49.5625f, -7.3125f, 2.25f).setRotationAngle(0, 0, 0)
 		);
+		CoalOverflow.add(new ModelRendererTurbo(CoalOverflow, 240, 6, textureX, textureY)
+			.addShapeBox(0, 0, 0, 2, 0, 1, 0, 1.25f, 0, -0.625f, -1.75f, -1.25f, -0.4375f, -0.25f, -1.25f, 0, 0, 0, 0, 1.25f, 0, -0.625f, -3.125f, 1.25f, -0.4375f, -0.25f, 1.25f, 0, 0, 0, 0)
+			.setRotationPoint(48.0625f, -7.3125f, -4.75f).setRotationAngle(0, 0, 0)
+		);
 		CoalOverflow.add(new ModelRendererTurbo(CoalOverflow, 12, 6, textureX, textureY)
 			.addShapeBox(0, 0, 0, 2, 0, 1, 0, 0, 0, 0, -0.25f, -1.25f, 0, -1.75f, -1.25f, -0.4375f, 1.25f, 0, -0.625f, 0, 0, 0, -0.25f, 1.25f, 0, -3.125f, 1.25f, -0.4375f, 1.25f, 0, -0.625f)
 			.setRotationPoint(48.0625f, -7.3125f, 3.75f).setRotationAngle(0, 0, 0)
@@ -323,10 +327,6 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		Coal.add(new ModelRendererTurbo(Coal, 491, 6, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 0, 5, 0, 0, 0.375f, 0, 0, 0.25f, 0, 0, 1.5f, -0.1875f, 0, 1, -0.1875f, 0, -0.375f, 0, 0, -0.25f, 0, 0, -1.5f, -0.1875f, 0, -1, -0.1875f)
 			.setRotationPoint(-26.875f, -18.125f, -4.8125f).setRotationAngle(0, 0, 0)
-		);
-		Coal.add(new ModelRendererTurbo(Coal, 240, 6, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 0, 1, 0, 1.25f, 0, -0.625f, -1.75f, -1.25f, -0.4375f, -0.25f, -1.25f, 0, 0, 0, 0, 1.25f, 0, -0.625f, -3.125f, 1.25f, -0.4375f, -0.25f, 1.25f, 0, 0, 0, 0)
-			.setRotationPoint(48.0625f, -7.3125f, -4.75f).setRotationAngle(0, 0, 0)
 		);
 		groups.add(Coal);
 	}
@@ -1147,11 +1147,11 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 			.setRotationPoint(53, -2.375f, -8.5f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 355, 134, textureX, textureY)
-			.addShapeBox(0, 0, 0, 7, 7, 7, 0, 0, 0, -0.25f, -0.625f, 0, -0.25f, -0.625f, 0, -0.25f, 0, 0, -0.25f, 0, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.25f, 0, 0.5625f, -0.25f)
+			.addShapeBox(0, 0, 0, 7, 7, 7, 0, 0, 0, -0.375f, -0.625f, 0, -0.375f, -0.625f, 0, -0.25f, 0, 0, -0.25f, 0, 0.5625f, -0.375f, -0.625f, 0.5625f, -0.375f, -0.625f, 0.5625f, -0.25f, 0, 0.5625f, -0.25f)
 			.setRotationPoint(46.625f, -12.4375f, -11).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 326, 134, textureX, textureY)
-			.addShapeBox(0, 0, 0, 7, 7, 7, 0, 0, 0, -0.25f, -0.625f, 0, -0.25f, -0.625f, 0, -0.25f, 0, 0, -0.25f, 0, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.25f, 0, 0.5625f, -0.25f)
+			.addShapeBox(0, 0, 0, 7, 7, 7, 0, 0, 0, -0.25f, -0.625f, 0, -0.25f, -0.625f, 0, -0.375f, 0, 0, -0.375f, 0, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.25f, -0.625f, 0.5625f, -0.375f, 0, 0.5625f, -0.375f)
 			.setRotationPoint(46.625f, -12.4375f, 4).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 136, 142, textureX, textureY)
@@ -1159,8 +1159,8 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 			.setRotationPoint(46.625f, -6.375f, -4.5f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 217, 25, textureX, textureY)
-			.addShapeBox(0, 0, 0, 95, 1, 22, 0, 0, -0.5f, -0.25f, -0.5f, -0.5f, -0.25f, -0.5f, -0.5f, -0.25f, 0, -0.5f, -0.25f, 0, 0, -0.25f, -0.5f, 0, -0.25f, -0.5f, 0, -0.25f, 0, 0, -0.25f)
-			.setRotationPoint(-45.5f, -5.875f, -11).setRotationAngle(0, 0, 0)
+			.addShapeBox(0, 0, 0, 94, 1, 22, 0, 0, -0.5f, -0.25f, -0.5f, -0.5f, -0.25f, -0.5f, -0.5f, -0.25f, 0, -0.5f, -0.25f, 0, 0, -0.25f, -0.5f, 0, -0.25f, -0.5f, 0, -0.25f, 0, 0, -0.25f)
+			.setRotationPoint(-44.5f, -5.875f, -11).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 316, 173, textureX, textureY)
 			.addShapeBox(0, 0, 0, 1, 6, 1, 0, 0, 0, 0, -0.625f, 0, 0, -0.625f, 0, 0, 0, 0, 0, 0, 0.4375f, 0, -0.625f, 0.4375f, 0, -0.625f, 0.4375f, 0, 0, 0.4375f, 0)
@@ -2071,7 +2071,7 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 506, 143, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(48.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(48.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 437, 128, textureX, textureY)
 			.addShapeBox(0, 0, 0, 3, 1, 19, 0, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, 0, 0, 0, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, 0, 0, 0)
@@ -2095,47 +2095,47 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 198, 143, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(40.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(40.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 0, 143, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(32.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(32.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 48, 142, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(24.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(24.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 107, 141, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(16.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(16.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 80, 141, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(8.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(8.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 64, 141, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(0.9375f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(0.9375f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 400, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(-7.0625f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-7.0625f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 384, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(-15.0625f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-15.0625f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 229, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(-23.0625f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-23.0625f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 221, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(-31.0625f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-31.0625f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 32, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
-			.setRotationPoint(-39.0625f, -1.9375f, -9.125f).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-39.0625f, -1.9375f, -9.625f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 16, 140, textureX, textureY)
 			.addShapeBox(0, 0, -0.5f, 1, 3, 1, 0, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f, -0.3125f, 0.1875f, -0.125f)
@@ -2177,8 +2177,8 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 32, 136, textureX, textureY).newCylinderBuilder()
 			.setPosition(0, -0.5f, 0).setRadius(1, 0).setLength(1).setSegments(8, 0).setScale(0.5f, 0.5f).setDirection(3)
-			.setTopOffset(new Vec3f(-1.0, 0.0, 0.0)).setTopRotation(new Vec3f(0.0, 45.0, 0.0)).build()
-			.setRotationPoint(-44.375f, 1.125f, 10).setRotationAngle(0, 0, 0)
+			.setTopOffset(new Vec3f(-1.0, 0.0, 0.0)).setTopRotation(new Vec3f(0.0, -45.0, 0.0)).build()
+			.setRotationPoint(-44.375f, 1.125f, 10).setRotationAngle(0, 0, -45)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 16, 136, textureX, textureY).addCylinder(-1, -0.5f, 0, 1, 1, 8, 0.5f, 0.5f, 3, null)
 			.setRotationPoint(-44.375f, 1.125f, 10).setRotationAngle(0, 0, -45)
@@ -2190,10 +2190,6 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		clipboard.add(new ModelRendererTurbo(clipboard, 488, 47, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 1, 7, 0, 0, 0.375f, -0.25f, 0, 0.375f, -0.25f, 0, 0.375f, 0, 0, 0.375f, 0, 0, 0, -0.25f, 0, 0, -0.25f, 0, 0, -0.375f, 0, 0, -0.375f)
 			.setRotationPoint(49, -4.5f, 4).setRotationAngle(0, 0, 0)
-		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 342, 134, textureX, textureY)
-			.addShapeBox(0, 0, 0, 0, 6, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(-51.51f, -9.25f, -9).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 404, 164, textureX, textureY).newCylinderBuilder()
 			.setPosition(0, 0, 0).setRadius(2, 1.75f).setLength(1).setSegments(10, 0).setScale(0.625f, 0.625f).setDirection(3)
@@ -2208,11 +2204,15 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 183, 144, textureX, textureY)
 			.addShapeBox(0, 0, 0, 5, 2, 2, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f)
-			.setRotationPoint(-57.5f, 0.75f, -1).setRotationAngle(0, 0, 0)
+			.setRotationPoint(-56.5f, 3.25f, -1).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 283, 138, textureX, textureY)
 			.addShapeBox(0, 0, 0, 4, 2, 2, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f)
 			.setRotationPoint(55.875f, 0.75f, -1).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 141, 174, textureX, textureY)
+			.addShapeBox(0, 0, 0, 3, 4, 8, 0, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0, -0.125f, 0, 0.5f, -0.125f, 0, -1.5f, -1.125f, 0, -1.5f, -1.125f, 0, 0.5f, -0.125f)
+			.setRotationPoint(-51.5f, 1.125f, -4).setRotationAngle(0, 0, 0)
 		);
 		groups.add(clipboard);
 	}
@@ -2258,6 +2258,10 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		PaintingStuff.add(new ModelRendererTurbo(PaintingStuff, 163, 86, textureX, textureY)
 			.addShapeBox(0, 0, 0, 79, 1, 0, 0, 0, -0.25f, 0.75f, 0.5f, -0.25f, 0.75f, 0.5f, -0.25f, -0.75f, 0, -0.25f, -0.75f, 0, 0, 0, 0.5f, 0, 0, 0.5f, 0, 0, 0, 0, 0)
 			.setRotationPoint(-32, -17.875f, 10.135f).setRotationAngle(0, 0, 0)
+		);
+		PaintingStuff.add(new ModelRendererTurbo(PaintingStuff, 342, 134, textureX, textureY)
+			.addShapeBox(0, 0, 0, 0, 6, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+			.setRotationPoint(-51.51f, -9.25f, -9).setRotationAngle(0, 0, 0)
 		);
 		groups.add(PaintingStuff);
 	}
@@ -2895,7 +2899,7 @@ public class ModelNYCPT2Tender extends FVTMFormatBase {
 		for (FVTMFormatBase.TurboList l : groups) {
 			GL11.glPushMatrix();
 			if (l.name.equals("Coal")) {
-				GL11.glTranslatef(0,1- ((float) cargo / ((EntityNYCPT2Tender)entity).freightInventorySize),0);
+				GL11.glTranslatef(0,0.9f - (((float) cargo / ((EntityNYCPT2Tender)entity).freightInventorySize) * 0.9f),0);
 			}
 			else if (l.name.equals("CoalOverflow") && cargo < 4) {
 				GL11.glPopMatrix();

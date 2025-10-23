@@ -1,9 +1,13 @@
 package tcmodern.common.core.handler;
 
 import tcmodern.client.render.locomotive.steam.ModelL3aMohawk;
+import tcmodern.client.render.rollingstock.passenger.ModelHeavyweightColonistCar;
+import tcmodern.client.render.rollingstock.passenger.ModelHeavyweightTailCar;
 import tcmodern.client.render.rollingstock.tender.ModelNYC40ft3inTender;
 import tcmodern.client.render.rollingstock.tender.ModelNYC46ft4inTender;
 import tcmodern.client.render.rollingstock.tender.ModelNYCPT2Tender;
+import tcmodern.common.entities.passenger.EntityHeavyweightColonistCar;
+import tcmodern.common.entities.passenger.EntityHeavyweightTailCar;
 import tcmodern.common.entities.steam.EntityL3aMohawk;
 import tcmodern.common.entities.tender.EntityNYC40ft3inTender;
 import tcmodern.common.entities.tender.EntityNYC46ft4inTender;
@@ -52,6 +56,18 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityNYCPT2Tender.class, new ModelNYCPT2Tender(),
                                 "NYCPT2Tender_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityHeavyweightTailCar.class, new ModelHeavyweightTailCar(),
+                                "Heavyweight_Tail_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityHeavyweightColonistCar.class, new ModelHeavyweightColonistCar(),
+                                "Heavyweight_Colonist_",
                                 new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
                 );
     }

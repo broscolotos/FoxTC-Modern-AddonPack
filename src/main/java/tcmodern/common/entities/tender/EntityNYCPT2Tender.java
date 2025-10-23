@@ -1,6 +1,7 @@
 package tcmodern.common.entities.tender;
 
 import net.minecraft.entity.item.EntityMinecart;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -11,6 +12,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 import train.common.Traincraft;
 import train.common.api.LiquidManager;
 import train.common.api.Tender;
+import train.common.library.GuiIDs;
 
 public class EntityNYCPT2Tender extends Tender implements IInventory {
     public int freightInventorySize;
@@ -38,9 +40,6 @@ public class EntityNYCPT2Tender extends Tender implements IInventory {
     public float getOptimalDistance(EntityMinecart cart) {
         return 3.5F;
     }
-
-
-
 
     /** Things you probably don't need to touch **/
 
@@ -86,6 +85,9 @@ public class EntityNYCPT2Tender extends Tender implements IInventory {
     @Override
     public void onUpdate() {
         super.onUpdate();
+        if (this.rotationYaw - this.prevRotationYaw > 45) {
+            this.rotationYaw = this.prevRotationYaw;
+        }
         checkInvent(tenderItems[0], this);
     }
 

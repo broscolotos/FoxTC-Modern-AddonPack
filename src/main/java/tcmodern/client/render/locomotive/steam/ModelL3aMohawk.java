@@ -2,6 +2,7 @@
 //Using PER-GROUP-INIT mode with limit '500'!
 package tcmodern.client.render.locomotive.steam;
 
+
 import net.minecraft.entity.Entity;
 import org.lwjgl.opengl.GL11;
 import tcmodern.client.render.locomotive.bogies.ModelL3aFrontBogie;
@@ -32,7 +33,7 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 		for (TurboList l : groups) {
 			ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
 			l.toArray(arr);
-			fixRotation(arr, true, true, true);
+			fixRotation(arr, false, false, true);
 		}
 	}
 
@@ -1680,8 +1681,8 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.015625f, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.515625f, 0, 0, -0.015625f, 0, 0, 0, 0, 0, -0.5f, 0, 0, -0.515625f, 0, 0)
 			.setRotationPoint(49.3125f, -10.25f, -1.125f).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 175, 9, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 51, 180, textureX, textureY)
+			.addShapeBox(0, 0, 0, 4, 2, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, -1, 0, -2, -1, 0, -2, -1, 0, 0, -1, 0)
 			.setRotationPoint(49.3125f, -10.25f, -1.135f).setRotationAngle(0, 0, 0).setName("Lamp Num Board R")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 480, 13, textureX, textureY)
@@ -1692,8 +1693,8 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.addShapeBox(0, 0, 0, 2, 1, 1, 0, -0.515625f, 0, 0, -0.5f, 0, 0, 0, 0, 0, -0.015625f, 0, 0, -0.515625f, 0, 0, -0.5f, 0, 0, 0, 0, 0, -0.015625f, 0, 0)
 			.setRotationPoint(49.3125f, -10.25f, 0.125f).setRotationAngle(0, 0, 0)
 		);
-		clipboard.add(new ModelRendererTurbo(clipboard, 101, 9, textureX, textureY)
-			.addShapeBox(0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+		clipboard.add(new ModelRendererTurbo(clipboard, 51, 177, textureX, textureY)
+			.addShapeBox(0, 0, 0, 4, 2, 0, 0, 0, 0, 0, -2, 0, 0, -2, 0, 0, 0, 0, 0, 0, -1, 0, -2, -1, 0, -2, -1, 0, 0, -1, 0)
 			.setRotationPoint(49.3125f, -10.25f, 1.135f).setRotationAngle(0, 0, 0).setName("Lamp Num Board L")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 486, 160, textureX, textureY)
@@ -1929,8 +1930,8 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.setRotationPoint(-32.5f, -13.5f, -7.25f).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 106, 163, textureX, textureY)
-			.addShapeBox(0, -0.5f, -0.5f, 1, 1, 1, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0)
-			.setRotationPoint(-40.3125f, -14.5625f, -7).setRotationAngle(8, 0, 0)
+			.addShapeBox(0, -0.5f, -0.5f, 1, 1, 1, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0.25f, -0.25f, -0.25f, 0.25f, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0, -0.25f, -0.25f, 0.25f, -0.25f, -0.25f, 0.25f)
+			.setRotationPoint(-40.3125f, -14.3125f, -7.125f).setRotationAngle(-50, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 376, 105, textureX, textureY)
 			.addShapeBox(0, -0.5f, -0.5f, 7, 1, 1, 0, 0, -0.375f, -0.375f, 0.375f, -0.375f, -0.375f, 0.375f, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0, -0.375f, -0.375f, 0.375f, -0.375f, -0.375f, 0.375f, -0.375f, -0.375f, 0, -0.375f, -0.375f)
@@ -3968,23 +3969,23 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.setRotationPoint(29.6875f, -10, 0).setRotationAngle(-126, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 413, 133, textureX, textureY).newCylinderBuilder()
-			.setPosition(0, 0, 0).setRadius(2, 1.75f).setLength(2).setSegments(10, 0).setScale(1, 1).setDirection(4)
+			.setPosition(0, 0, 0).setRadius(2, 1.625f).setLength(2).setSegments(10, 0).setScale(1, 1).setDirection(4)
 			.setTopOffset(new Vec3f(0.0, -0.25, 0.0)).setTopRotation(new Vec3f(0.0, 0.0, 0.0)).build()
-			.setRotationPoint(38.5625f, -19.25f, 0).setRotationAngle(0, 0, 0)
+			.setRotationPoint(38.53125f, -19.25f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 404, 133, textureX, textureY).newCylinderBuilder()
-			.setPosition(0, 0, 0).setRadius(2, 1.75f).setLength(1).setSegments(10, 0).setScale(1, 1.25f).setDirection(4)
+			.setPosition(0, 0, 0).setRadius(2, 1.625f).setLength(1).setSegments(10, 0).setScale(1, 1.25f).setDirection(4)
 			.setTopOffset(null).setTopRotation(new Vec3f(0.0, 0.0, 0.0)).build()
-			.setRotationPoint(38.5625f, -17.5f, 0).setRotationAngle(0, 0, 0)
+			.setRotationPoint(38.53125f, -17.5f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 294, 133, textureX, textureY).newCylinderBuilder()
-			.setPosition(0, 0, 0).setRadius(2, 1.6025f).setLength(1).setSegments(10, 0).setScale(1.0625f, 1.0625f).setDirection(4)
+			.setPosition(0, 0, 0).setRadius(2, 1.4775f).setLength(1).setSegments(10, 0).setScale(1.0625f, 1.0625f).setDirection(4)
 			.setTopOffset(new Vec3f(0.0, -0.75, 0.0)).setTopRotation(new Vec3f(0.0, 0.0, 0.0)).build()
-			.setRotationPoint(38.5625f, -19.5f, 0).setRotationAngle(0, 0, 0)
+			.setRotationPoint(38.53125f, -19.5f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 97, 9, textureX, textureY)
 			.addShapeBox(-0.5f, 0, -0.5f, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-			.setRotationPoint(38.5625f, -17.5f, 0).setRotationAngle(0, 0, 0).setName("Smokey Boi")
+			.setRotationPoint(38.53125f, -17.5f, 0).setRotationAngle(0, 0, 0).setName("Smokey Boi")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 407, 165, textureX, textureY).addCylinder(-0.5f, 0, 0, 1, 1, 8, 1.375f, 1.5625f, 2, new Vec3f(0.6875, 0.0, 0.0))
 			.setRotationPoint(51.75f, -9.75f, 0).setRotationAngle(0, 0, 0)
@@ -4007,7 +4008,7 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.setRotationPoint(52.75f, -9.75f, 0).setRotationAngle(0, 0, 0)
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 407, 165, textureX, textureY).addCylinder(-0.5f, 0, 0, 1, 1, 8, 1.375f, 1.375f, 2, new Vec3f(0.6875, 0.0, 0.0))
-			.setRotationPoint(51.76f, -9.75f, 0).setRotationAngle(0, 0, 0).setName("lamp")
+			.setRotationPoint(51.76f, -9.75f, 0).setRotationAngle(0, 0, 0).setName("LAMP")
 		);
 		clipboard.add(new ModelRendererTurbo(clipboard, 196, 120, textureX, textureY).addCylinder(0, 0, 0, 4, 1, 12, 1.1875f, 1, 3, null)
 			.setRotationPoint(46.8125f, -10, 0).setRotationAngle(0, 0, 0)
@@ -4611,8 +4612,17 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 			.setTopOffset(new Vec3f(-1.0, 0.0, 0.0)).setTopRotation(new Vec3f(45.0, 0.0, 0.0)).build()
 			.setRotationPoint(21.75f, -9.5625f, -7.75f).setRotationAngle(0, -45, 0)
 		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 268, 158, textureX, textureY).addCylinder(0, 0, 0, 1, 1, 8, 0.5f, 0.5f, 0, new Vec3f(0.0, 0.0, -0.9375))
+			.setRotationPoint(22.25f, -9.5625f, -7.75f).setRotationAngle(0, 0, 0)
+		);
+		clipboard.add(new ModelRendererTurbo(clipboard, 51, 168, textureX, textureY)
+				.addShapeBox(0, 0, 0, 0, 2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, -3, 0, 0, -3, 0, -1, 0, 0, -1, 0, 0, -1, -3, 0, -1, -3)
+				.setRotationPoint(52.07f, -8, -1.5f).setRotationAngle(0, 0, 0)
+				.setName("Lamp Num Board Lcp")
+		);
 		groups.add(clipboard);
 	}
+
 
 	ModelL3aRearBogie rear = new ModelL3aRearBogie();
 	ModelL3aFrontBogie front = new ModelL3aFrontBogie();
@@ -4634,7 +4644,4 @@ public class ModelL3aMohawk extends FVTMFormatBase {
 		front.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}
-
-
-
 }
