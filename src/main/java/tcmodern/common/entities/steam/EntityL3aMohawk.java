@@ -9,6 +9,7 @@ import train.common.api.LiquidManager;
 import train.common.api.SteamTrain;
 import train.common.core.util.TraincraftUtil;
 import train.common.library.EnumSounds;
+import train.common.library.EnumTrains;
 import train.common.library.GuiIDs;
 import train.common.library.sounds.SoundRecord;
 
@@ -16,8 +17,6 @@ public class EntityL3aMohawk  extends SteamTrain {
 
     public EntityL3aMohawk(World world) {
         super(world, Traincraft.traincraftRegistry.getTrainRecord(EntityL3aMohawk.class).getTankCapacity(), LiquidManager.WATER_FILTER);
-        fuelTrain = 0;
-        locoInvent = new ItemStack[inventorySize];
     }
 
     public EntityL3aMohawk(World world, double d, double d1, double d2) {
@@ -49,27 +48,4 @@ public class EntityL3aMohawk  extends SteamTrain {
         TraincraftUtil.updateRider(this, -1.125, 0.375);
     }
 
-    /** stuff you probably don't need to change **/
-
-    @Override
-    public void pressKey(int i) {
-        if (i == 7 && riddenByEntity != null && riddenByEntity instanceof EntityPlayer) {
-            ((EntityPlayer) riddenByEntity).openGui(Traincraft.instance, GuiIDs.LOCO, worldObj, (int) this.posX, (int) this.posY, (int) this.posZ);
-        }
-    }
-
-    @Override
-    public void onUpdate() {
-        super.onUpdate();
-        if (worldObj.isRemote) {
-            return;
-        }
-        checkInvent(locoInvent[0], locoInvent[1], this);
-    }
-
-    @Override
-    public boolean canBeAdjusted(EntityMinecart cart) { return canBeAdjusted; }
-
-    @Override
-    public boolean isItemValidForSlot(int i, ItemStack itemstack) { return true; }
 }

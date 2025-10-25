@@ -13,6 +13,6 @@ public class ItemTCModernRollingStock extends ItemAbstractRollingStock {
 
     @Override
     public String GetTexturePath() {
-        return Info.modID.toLowerCase() + ":/trains/" + this.iconName;
+        return Info.modID.toLowerCase() + ":trains/" + this.iconName;
     }
 }

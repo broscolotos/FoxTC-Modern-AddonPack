@@ -12,12 +12,16 @@ import static train.common.library.TypeOfRollingStock.*;
 public enum TCModernRollingStockItems {
     //minecraftTemplate("template-icon", STEAM, 100),
     //minecraftTemplateUntradeable("template-icon", STEAM)
-    l3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk"),
+    L3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk"),
     NYC46ft4inTender("tender/NYC46ft", FREIGHT, "NYC46ft4inTender"),
     NYC40ft3inTender("tender/NYC46ft", FREIGHT, "NYC40ft3inTender"),
     NYCPT2Tender("tender/NYCPT2", FREIGHT, "NYCPT2Tender"),
     HeavyweightTailCar("passenger/heavyweightTail", PASSENGER, "HeavyweightTailCar"),
     HeavyweightColonistCar("passenger/heavyweightColonist", PASSENGER, "HeavyweightColonistCar"),
+    HeavyweightDinerCar("passenger/heavyweightDiner", PASSENGER, "HeavyweightDinerCar"),
+    AC44CW("diesel/AC44CW", DIESEL, "AC44CW"),
+    Tamu8000("freight/tanks/Tamu8000", FREIGHT, "Tamu8000"),
+    WoodenHopper40Ton("freight/hoppers/40TonWoodenHopper", FREIGHT, "40TonWoodenHopper"),
     ;
 
 

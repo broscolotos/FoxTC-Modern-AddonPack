@@ -1,0 +1,32 @@
+package tcmodern.common.entities.freight.hoppers;
+
+import com.jcirmodelsquad.tcjcir.models.loads.ModelAAR50TonHopperLoad;
+import net.minecraft.entity.item.EntityMinecart;
+import net.minecraft.world.World;
+import train.common.api.AbstractStandardFreightCar;
+import train.common.entity.CargoManager;
+import train.common.entity.CargoSpecification;
+
+public class Entity40TonWoodenHopper extends AbstractStandardFreightCar {
+
+    public Entity40TonWoodenHopper(World world) {
+        super(world);
+    }
+
+    public Entity40TonWoodenHopper(World world, double x, double y, double z) {
+        super(world, x, y, z);
+    }
+
+    @Override
+    public CargoManager setupCargoManager() { return null; }
+
+    @Override
+    public void setupTextureDescription() { }
+
+    @Override
+    public String getInventoryName() { return "40 Ton Wooden Hopper"; }
+
+    @Override
+    public float getOptimalDistance(EntityMinecart cart) { return 1.65F; }
+
+}

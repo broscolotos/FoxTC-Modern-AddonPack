@@ -36,7 +36,7 @@ public class TCModern {
 
         TCModernItems tcModernItems = new TCModernItems();
         TCModernRollingStockEntityHandler entityHandler = new TCModernRollingStockEntityHandler();
-        tcModernTab.setIconItemStack(TCModernRollingStockItems.l3aMohawk.item);
+        tcModernTab.setIconItemStack(TCModernRollingStockItems.L3aMohawk.item);
 
         if (FMLCommonHandler.instance().getEffectiveSide().isClient()) {
             new tcmodern.common.core.handler.TCModernRollingStockModelHandler();

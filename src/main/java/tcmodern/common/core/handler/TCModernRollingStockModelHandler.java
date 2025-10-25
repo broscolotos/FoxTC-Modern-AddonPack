@@ -1,17 +1,18 @@
 package tcmodern.common.core.handler;
 
-import tcmodern.client.render.locomotive.steam.ModelL3aMohawk;
-import tcmodern.client.render.rollingstock.passenger.ModelHeavyweightColonistCar;
-import tcmodern.client.render.rollingstock.passenger.ModelHeavyweightTailCar;
-import tcmodern.client.render.rollingstock.tender.ModelNYC40ft3inTender;
-import tcmodern.client.render.rollingstock.tender.ModelNYC46ft4inTender;
-import tcmodern.client.render.rollingstock.tender.ModelNYCPT2Tender;
-import tcmodern.common.entities.passenger.EntityHeavyweightColonistCar;
-import tcmodern.common.entities.passenger.EntityHeavyweightTailCar;
-import tcmodern.common.entities.steam.EntityL3aMohawk;
-import tcmodern.common.entities.tender.EntityNYC40ft3inTender;
-import tcmodern.common.entities.tender.EntityNYC46ft4inTender;
-import tcmodern.common.entities.tender.EntityNYCPT2Tender;
+import tcmodern.client.render.locomotive.diesel.*;
+import tcmodern.client.render.locomotive.steam.*;
+import tcmodern.client.render.rollingstock.freight.hopper.Model40TonWoodenHopper;
+import tcmodern.client.render.rollingstock.freight.tanks.ModelTamu8000;
+import tcmodern.client.render.rollingstock.passenger.*;
+import tcmodern.client.render.rollingstock.tender.*;
+
+import tcmodern.common.entities.diesel.*;
+import tcmodern.common.entities.freight.hoppers.Entity40TonWoodenHopper;
+import tcmodern.common.entities.freight.tanks.EntityTamu8000;
+import tcmodern.common.entities.passenger.*;
+import tcmodern.common.entities.steam.*;
+import tcmodern.common.entities.tender.*;
 import tcmodern.common.library.Info;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
@@ -68,6 +69,31 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityHeavyweightColonistCar.class, new ModelHeavyweightColonistCar(),
                                 "Heavyweight_Colonist_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityHeavyweightDinerCar.class, new ModelHeavyweightDinerCar(),
+                                "Heavyweight_Diner_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityAC44CW.class, new ModelAC44CW(),
+                                "AC44CW_",
+                                new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},null,
+                                null, null, null, null, 0, 0)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityTamu8000.class, new ModelTamu8000(),
+                                "Tamu_8000_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, Entity40TonWoodenHopper.class, new Model40TonWoodenHopper(),
+                                "40_Ton_Wooden_Hopper_",
                                 new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
                 );
     }
