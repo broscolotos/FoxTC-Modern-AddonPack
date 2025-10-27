@@ -1,24 +1,14 @@
 package tcmodern.common.entities.freight.hoppers;
 
-import com.jcirmodelsquad.tcjcir.models.loads.ModelAAR50TonHopperLoad;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
-import train.common.api.AbstractStandardFreightCar;
-import train.common.entity.CargoManager;
-import train.common.entity.CargoSpecification;
+import train.common.api.AbstractStandardFixedFreightCar;
 
-public class Entity40TonWoodenHopper extends AbstractStandardFreightCar {
+public class Entity40TonWoodenHopper extends AbstractStandardFixedFreightCar {
 
-    public Entity40TonWoodenHopper(World world) {
-        super(world);
-    }
+    public Entity40TonWoodenHopper(World world) { super(world); }
 
-    public Entity40TonWoodenHopper(World world, double x, double y, double z) {
-        super(world, x, y, z);
-    }
-
-    @Override
-    public CargoManager setupCargoManager() { return null; }
+    public Entity40TonWoodenHopper(World world, double x, double y, double z) { super(world, x, y, z); }
 
     @Override
     public void setupTextureDescription() { }
