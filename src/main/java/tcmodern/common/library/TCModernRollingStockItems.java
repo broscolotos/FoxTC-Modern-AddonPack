@@ -19,6 +19,8 @@ public enum TCModernRollingStockItems {
     HeavyweightTailCar("passenger/heavyweightTail", PASSENGER, "HeavyweightTailCar"),
     HeavyweightColonistCar("passenger/heavyweightColonist", PASSENGER, "HeavyweightColonistCar"),
     HeavyweightDinerCar("passenger/heavyweightDiner", PASSENGER, "HeavyweightDinerCar"),
+    HeavyweightCombineCar("passenger/heavyweightCombine", PASSENGER, "HeavyweightCombineCar"),
+    HeavyweightBaggageCar("passenger/heavyweightBaggage", FREIGHT, "HeavyweightBaggageCar"),
     AC44CW("diesel/AC44CW", DIESEL, "AC44CW"),
     Tamu8000("freight/tanks/Tamu8000", FREIGHT, "Tamu8000"),
     WoodenHopper40Ton("freight/hoppers/40TonWoodenHopper", FREIGHT, "40TonWoodenHopper"),

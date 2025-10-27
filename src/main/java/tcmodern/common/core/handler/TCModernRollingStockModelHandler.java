@@ -79,6 +79,18 @@ public class TCModernRollingStockModelHandler {
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityHeavyweightCombineCar.class, new ModelHeavyweightCombineCar(),
+                                "Heavyweight_Combine_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityHeavyweightBaggageCar.class, new ModelHeavyweightBaggageCar(),
+                                "Heavyweight_Baggage_",
+                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityAC44CW.class, new ModelAC44CW(),
                                 "AC44CW_",
                                 new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},null,
