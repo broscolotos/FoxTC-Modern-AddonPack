@@ -12,6 +12,11 @@ public class ItemTCModernRollingStock extends ItemAbstractRollingStock {
     }
 
     @Override
+    public String GetContentPackName() {
+        return "Traincraft Modern";
+    }
+
+    @Override
     public String GetTexturePath() {
         return Info.modID.toLowerCase() + ":trains/" + this.iconName;
     }

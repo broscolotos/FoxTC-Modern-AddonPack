@@ -17,6 +17,8 @@ import tcmodern.common.library.Info;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 
+import java.util.ArrayList;
+
 public class TCModernRollingStockModelHandler {
     /**
      * Only setup Model Register calls from here or you will crash the server.
@@ -39,7 +41,7 @@ public class TCModernRollingStockModelHandler {
                         new TrainRenderRecord(modID, EntityL3aMohawk.class, new ModelL3aMohawk(),
                                 "l3a_mohawk_",
                                 new float[] {-2.5f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                null, null, null, null, 0, 0)
+                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { 4.875D, 1.3875D, 0.0D }); } }, "explode", new ArrayList<double[]>() { { add(new double[] { 4.5, -0.1875D, 0.6875D }); } }, 10, 2)
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
@@ -93,8 +95,9 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityAC44CW.class, new ModelAC44CW(),
                                 "AC44CW_",
-                                new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                null, null, null, null, 0, 0)
+                                new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},null, "smoke",
+                                new ArrayList<double[]>() { { add(new double[]{1.59375D, 1.4D, 0.0D}); } },
+                                null, null, 5, 0)
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
@@ -107,6 +110,25 @@ public class TCModernRollingStockModelHandler {
                         new TrainRenderRecord(modID, Entity40TonWoodenHopper.class, new Model40TonWoodenHopper(),
                                 "40_Ton_Wooden_Hopper_",
                                 new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityAllegheny.class, new ModelAlleghenyMain(),
+                                "Allegheny_",
+                                new float[] {1, 0.1875f, 0}, new float[] {0, 180, 180},null,
+                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { -3.96875D, 1.8125D, 0.0D }); add(new double[] { -3.6875D, 1.8125D, 0.0D }); } }, "explode", new ArrayList<double[]>() { { add(new double[] { -0.5, -0.1875D, 0.6875D }); } }, 10, 2)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityAlleghenyFront.class, new ModelAlleghenyFront(),
+                                "Allegheny_",
+                                new float[] {1f, 0.1875f, 0}, new float[] {0, 0, 180},null,
+                                null, null, "explode", new ArrayList<double[]>() { { add(new double[] { 2.0625D, -0.1875D, 0.6875D }); } }, 0, 2)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityCnOTender.class, new ModelCnOTender(),
+                                "CnOTender_", new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
                 );
     }
 }

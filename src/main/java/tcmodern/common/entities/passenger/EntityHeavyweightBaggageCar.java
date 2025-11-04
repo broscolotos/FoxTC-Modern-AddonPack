@@ -8,8 +8,6 @@ public class EntityHeavyweightBaggageCar extends AbstractStandardFixedFreightCar
 
     public EntityHeavyweightBaggageCar(World world) { super(world); }
 
-    public EntityHeavyweightBaggageCar(World world, double d, double d1, double d2) { super(world, d, d1, d2); }
-
     @Override
     public void setupTextureDescription() {}
 

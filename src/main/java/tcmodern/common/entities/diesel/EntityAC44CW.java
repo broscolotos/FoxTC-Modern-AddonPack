@@ -13,18 +13,18 @@ public class EntityAC44CW extends DieselTrain {
 
     public EntityAC44CW(World world) {
         super(world, Traincraft.traincraftRegistry.getTrainRecord(EntityAC44CW.class).getTankCapacity(), LiquidManager.dieselFilter());
-
+        setupTextureDescription();
     }
 
-    public EntityAC44CW(World world, double d, double d1, double d2){
-        this(world);
-        setPosition(d, d1 + yOffset, d2);
-        motionX = 0.0D;
-        motionY = 0.0D;
-        motionZ = 0.0D;
-        prevPosX = d;
-        prevPosY = d1;
-        prevPosZ = d2;
+
+    public void setupTextureDescription() {
+        InsertTexture(0, "Kansas City Southern");
+        InsertTexture(1, "Florida East Coast - Grupo Mexico");
+        InsertTexture(2, "Central Maine & Quebec");
+        InsertTexture(3, "Southern Pacific");
+        InsertTexture(4, "CSX (YN3)");
+        InsertTexture(5, "CSX (YN2)");
+        InsertTexture(6, "Ferromex");
     }
 
     @Override
@@ -35,8 +35,6 @@ public class EntityAC44CW extends DieselTrain {
 
     @Override
     public String getInventoryName() { return "AC44CW"; }
-
-
 
     @Override
     public SoundRecord getSoundRecord() { return EnumSounds.DieselAC4400CW; }

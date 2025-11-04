@@ -9,11 +9,8 @@ public class EntityHeavyweightCombineCar extends AbstractPassengerCombineCar {
 
     public EntityHeavyweightCombineCar(World world) { super(world); }
 
-    public EntityHeavyweightCombineCar(World world, double d, double d1, double d2) { super(world, d, d1, d2); }
-
     @Override
     public void setupTextureDescription() {}
-
 
     @Override
     public String getInventoryName() { return "Heavyweight Combine Car"; }

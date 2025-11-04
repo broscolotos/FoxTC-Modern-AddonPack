@@ -24,6 +24,9 @@ public enum TCModernRollingStockItems {
     AC44CW("diesel/AC44CW", DIESEL, "AC44CW"),
     Tamu8000("freight/tanks/Tamu8000", FREIGHT, "Tamu8000"),
     WoodenHopper40Ton("freight/hoppers/40TonWoodenHopper", FREIGHT, "40TonWoodenHopper"),
+    AlleghenyMain("steam/Allegheny", STEAM, "Allegheny"),
+    AlleghenyFront("steam/Allegheny", STEAM, "AlleghenyFront"),
+    CnOTender("tender/CnOTender", FREIGHT, "CnO Tender"),
     ;
 
 

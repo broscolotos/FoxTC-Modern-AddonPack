@@ -8,8 +8,6 @@ public class Entity40TonWoodenHopper extends AbstractStandardFixedFreightCar {
 
     public Entity40TonWoodenHopper(World world) { super(world); }
 
-    public Entity40TonWoodenHopper(World world, double x, double y, double z) { super(world, x, y, z); }
-
     @Override
     public void setupTextureDescription() { }
 

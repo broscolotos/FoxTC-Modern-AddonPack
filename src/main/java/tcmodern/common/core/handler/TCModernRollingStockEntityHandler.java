@@ -108,5 +108,27 @@ public class TCModernRollingStockEntityHandler {
                         EnumTrainType.OpenTopHopper, 1.5, new String[]{"Brown"}, 14, 27),
                 Instance()
         );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.AlleghenyMain.item,
+                new TrainRecord("C&O Allegheny", EntityAllegheny.class, TCModernRollingStockItems.AlleghenyMain.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 7, 0).setWaterConsumption(200)
+                        .setTankCapacity(20000).setBogieLocoPosition(-4.5).setAccelerationRate(0.65).setHeatingTime(160).setFuelConsumption(60)
+                        .setMHP(7500).setMaxSpeed(110).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.AlleghenyFront.item,
+                new TrainRecord("C&O Allegheny Front", EntityAlleghenyFront.class, TCModernRollingStockItems.AlleghenyFront.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 13, 0).setWaterConsumption(1)
+                        .setTankCapacity(10000).setBogieLocoPosition(-3.0).setAccelerationRate(0.65).setHeatingTime(160).setFuelConsumption(1)
+                        .setMHP(7500).setMaxSpeed(110).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.CnOTender.item,
+                new TrainRecord("C&O Tender", EntityCnOTender.class, TCModernRollingStockItems.CnOTender.item,
+                        "tender", 1.5, new String[]{"Black"}, 14).setTankCapacity(20000),
+                Instance()
+        );
     }
 }

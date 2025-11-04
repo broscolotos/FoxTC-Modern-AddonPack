@@ -25,7 +25,7 @@ public class ModelGEHIAD extends FVTMFormatBase {
 		for (TurboList l : groups) {
 			ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
 			l.toArray(arr);
-			fixRotation(arr, true);
+			fixRotation(arr, true, true, true);
 		}
 	}
 

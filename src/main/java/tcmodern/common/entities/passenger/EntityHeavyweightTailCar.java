@@ -15,8 +15,6 @@ public class EntityHeavyweightTailCar extends AbstractPassengerCar {
         super(world);
     }
 
-    public EntityHeavyweightTailCar(World world, double d, double d1, double d2) { super(world, d, d1, d2); }
-
     @Override
     public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0, 0.17); }
 
