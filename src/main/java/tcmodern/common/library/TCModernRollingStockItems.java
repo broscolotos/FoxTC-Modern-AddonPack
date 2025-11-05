@@ -27,6 +27,10 @@ public enum TCModernRollingStockItems {
     AlleghenyMain("steam/Allegheny", STEAM, "Allegheny"),
     AlleghenyFront("steam/Allegheny", STEAM, "AlleghenyFront"),
     CnOTender("tender/CnOTender", FREIGHT, "CnO Tender"),
+    Hopper100Ton("freight/hoppers/100TonHopper", FREIGHT, "100TonHopper"),
+    PRRT1("steam/PRRT1", STEAM, "PRR T1"),
+    PRRCoastToCoastTender("tender/PRRCoastToCoast", FREIGHT, "PRR Coast To Coast"),
+    NorthwesternEl24("electric/NorthwesternEl24", ELECTRIC, "Northwestern El24"),
     ;
 
 

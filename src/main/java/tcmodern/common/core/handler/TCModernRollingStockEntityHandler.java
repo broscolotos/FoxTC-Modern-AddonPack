@@ -2,6 +2,7 @@ package tcmodern.common.core.handler;
 
 import tcmodern.common.TCModern;
 import tcmodern.common.entities.diesel.*;
+import tcmodern.common.entities.electric.EntityNorthwesternEl24;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
@@ -128,6 +129,33 @@ public class TCModernRollingStockEntityHandler {
                 TCModernRollingStockItems.CnOTender.item,
                 new TrainRecord("C&O Tender", EntityCnOTender.class, TCModernRollingStockItems.CnOTender.item,
                         "tender", 1.5, new String[]{"Black"}, 14).setTankCapacity(20000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Hopper100Ton.item,
+                new TrainRecord("100 Ton Hopper", Entity100TonHopper.class, TCModernRollingStockItems.Hopper100Ton.item,
+                        EnumTrainType.OpenTopHopper, 4, new String[]{"Black"}, 13, 54),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.PRRT1.item,
+                new TrainRecord("PRR T1", EntityPRRT1.class, TCModernRollingStockItems.PRRT1.item,
+                        EnumTrainType.Steam, 0, new String[]{"Green"}, 7, 0).setWaterConsumption(200)
+                        .setTankCapacity(10000).setBogieLocoPosition(-6.5).setAccelerationRate(0.65).setHeatingTime(160).setFuelConsumption(60)
+                        .setMHP(6500).setMaxSpeed(225).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.PRRCoastToCoastTender.item,
+                new TrainRecord("PRR Coast To Coast Tender", EntityPRRCoastToCoastTender.class, TCModernRollingStockItems.PRRCoastToCoastTender.item,
+                        "tender", 1.5, new String[]{"Green"}, 14).setTankCapacity(20000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NorthwesternEl24.item,
+                new TrainRecord("Northwestern El24", EntityNorthwesternEl24.class, TCModernRollingStockItems.NorthwesternEl24.item,
+                        EnumTrainType.Electric, 0, new String[]{"Green"}, 12).setMHP(1327).setMaxSpeed(89).setFuelConsumption(10)
+                        .setHeatingTime(170).setAccelerationRate(0.7).setBrakeRate(0.95).setBogieLocoPosition(-5.25),
                 Instance()
         );
     }

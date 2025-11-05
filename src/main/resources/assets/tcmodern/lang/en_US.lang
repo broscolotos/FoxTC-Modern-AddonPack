@@ -17,6 +17,10 @@ item.tcmodern:40TonWoodenHopper.name=40 Ton Wooden Hopper
 item.tcmodern:Allegheny.name=C&O Allegheny
 item.tcmodern:AlleghenyFront.name=C&O Allegheny (Front)
 item.tcmodern:CnO Tender.name=C&O Tender
+item.tcmodern:100TonHopper.name=100 Ton Hopper
+item.tcmodern:PRR T1.name=PRR T1
+item.tcmodern:PRR Coast To Coast.name=PRR Coast To Coast Tender
+item.tcmodern:Northwestern El24.name=Northwestern El24
 
 <!-- ## ENTITY ## -->
 entity.tcmodern.L3a Mohawk.name=L3a Mohawk
@@ -33,4 +37,8 @@ entity.tcmodern.Tamu 8000.name=Tamu 8000
 entity.tcmodern.40 Ton Wooden Hopper.name=40 Ton Wooden Hopper
 entity.tcmodern.C&O Allegheny.name=C&O Allegheny
 entity.tcmodern.C&O Allegheny Front.name=C&O Allegheny Front
-entity.tcmodern:C&O Tender.name=C&O Tender
+entity.tcmodern.C&O Tender.name=C&O Tender
+entity.tcmodern.100 Ton Hopper.name=100 Ton Hopper
+entity.tcmodern.PRR T1.name=PRR T1
+entity.tcmodern.PRR Coast To Coast Tender.name=PRR Coast To Coast Tender
+entity.tcmodern.Northwestern El24.name=Northwestern El24

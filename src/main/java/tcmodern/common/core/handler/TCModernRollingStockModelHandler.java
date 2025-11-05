@@ -1,15 +1,17 @@
 package tcmodern.common.core.handler;
 
 import tcmodern.client.render.locomotive.diesel.*;
+import tcmodern.client.render.locomotive.electric.ModelNorthwesternEl24;
 import tcmodern.client.render.locomotive.steam.*;
-import tcmodern.client.render.rollingstock.freight.hopper.Model40TonWoodenHopper;
-import tcmodern.client.render.rollingstock.freight.tanks.ModelTamu8000;
+import tcmodern.client.render.rollingstock.freight.hopper.*;
+import tcmodern.client.render.rollingstock.freight.tanks.*;
 import tcmodern.client.render.rollingstock.passenger.*;
 import tcmodern.client.render.rollingstock.tender.*;
 
 import tcmodern.common.entities.diesel.*;
-import tcmodern.common.entities.freight.hoppers.Entity40TonWoodenHopper;
-import tcmodern.common.entities.freight.tanks.EntityTamu8000;
+import tcmodern.common.entities.electric.EntityNorthwesternEl24;
+import tcmodern.common.entities.freight.hoppers.*;
+import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
 import tcmodern.common.entities.steam.*;
 import tcmodern.common.entities.tender.*;
@@ -129,6 +131,30 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityCnOTender.class, new ModelCnOTender(),
                                 "CnOTender_", new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, Entity100TonHopper.class, new Model100TonHopper(),
+                                "100_Ton_Hopper_", new float[] {0, 0.28125f, 0}, new float[] {0, 0, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityPRRT1.class, new ModelPRRT1(),
+                                "PRR_T1_",
+                                new float[] {-3.25f, 0.1875f, 0}, new float[] {0, 180, 180},null,
+                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { -3.96875D, 1.8125D, 0.0D }); add(new double[] { -3.6875D, 1.8125D, 0.0D }); } }, "explode", new ArrayList<double[]>() { { add(new double[] { -0.5, -0.1875D, 0.6875D }); } }, 10, 2)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityPRRCoastToCoastTender.class, new ModelPRRCoastToCoastTender(),
+                                "PRRCoastToCoast_", new float[] {0, 0.1875f, 0}, new float[] {0, 180, 180}, null)
+                );
+        Traincraft.traincraftRegistry
+                .RegisterRollingStockModel(
+                        new TrainRenderRecord(modID, EntityNorthwesternEl24.class, new ModelNorthwesternEl24(),
+                                "NorthwesternEI24_",
+                                new float[] {-2.625f, 0.1875f, 0}, new float[] {0, 0, 180},null,
+                                null, null, null, null, 0, 0)
                 );
     }
 }
