@@ -31,6 +31,20 @@ public enum TCModernRollingStockItems {
     PRRT1("steam/PRRT1", STEAM, "PRR T1"),
     PRRCoastToCoastTender("tender/PRRCoastToCoast", FREIGHT, "PRR Coast To Coast"),
     NorthwesternEl24("electric/NorthwesternEl24", ELECTRIC, "Northwestern El24"),
+    NWClassAMain("steam/NWClassA", STEAM, "N&W Class A"),
+    NWClassAFront("steam/NWClassA", STEAM, "N&W Class A Front"),
+    NWY6bMain("steam/NWY6b", STEAM, "N&W Y6b"),
+    NWY6bFront("steam/NWY6b", STEAM, "N&W Y6b Front"),
+    NWTender("tender/NWTender", FREIGHT, "N&W Tender"),
+    HandCar("other/Handcar", ELECTRIC, "Handcar"),
+    RadioFlyer("other/RadioFlyer", ELECTRIC, "Radio Flyer Handcar"),
+    EMDModel40("diesel/EMDModel40", DIESEL, "EMD Model 40"),
+    EMCE3A("diesel/EMCE3B", DIESEL, "EMC E3A"),
+    EMCE3B("diesel/EMCE3B", DIESEL, "EMC E3B"),
+    EMDF3A("diesel/EMDF3A", DIESEL, "EMD F3A"),
+    EMDF3B("diesel/EMDE3B", DIESEL, "EMD F3B"),
+    F40ph("diesel/F40ph", DIESEL, "F40ph"),
+    GEU18B("diesel/GEU18B", DIESEL, "GE U18B"),
     ;
 
 

@@ -16,6 +16,11 @@ public class EntityNYC46ft4inTender extends Tender {
 
     public EntityNYC46ft4inTender(World world) {
         super(world, FluidRegistry.WATER, 0, Traincraft.traincraftRegistry.getTrainRecord(EntityNYC46ft4inTender.class).getTankCapacity(), LiquidManager.WATER_FILTER);
+        setupTextureDescription();
+    }
+
+    public void setupTextureDescription() {
+
     }
 
     @Override

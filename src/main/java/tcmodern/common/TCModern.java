@@ -12,10 +12,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import tcmodern.common.core.handler.TCModernRollingStockEntityHandler;
 import tcmodern.common.creativetabs.CreativeTabTCModern;
-import tcmodern.common.library.TCModernItems;
-import tcmodern.common.library.Info;
-import tcmodern.common.library.TCModernRollingStockItems;
-import tcmodern.common.library.TCModernTableRecipeRegistry;
+import tcmodern.common.library.*;
+import train.common.Traincraft;
 
 
 @Mod(modid = Info.modID, name = Info.modName, version = Info.modVersion, dependencies = "required-after:tc")
@@ -49,5 +47,10 @@ public class TCModern {
     public void load(FMLInitializationEvent event) { addonLog.info("load Addon Pack -" + Info.modName); }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) { addonLog.info("postInit Addon Pack -" + Info.modName); }
+    public void postInit(FMLPostInitializationEvent event) {
+        addonLog.info("postInit Addon Pack -" + Info.modName);
+        for (TCMLockoutGroups group : TCMLockoutGroups.values()) {
+            Traincraft.lockoutPermissionsUtil.AddLockGroup(group);
+        }
+    }
 }

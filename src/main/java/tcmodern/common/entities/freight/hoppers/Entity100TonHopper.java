@@ -9,7 +9,10 @@ public class Entity100TonHopper extends AbstractStandardFixedFreightCar {
     public Entity100TonHopper(World world) { super(world); }
 
     @Override
-    public void setupTextureDescription() { }
+    public void setupTextureDescription() {
+        InsertTexture(0, "Black");
+        InsertTexture(1, "Peabody short line");
+    }
 
     @Override
     public String getInventoryName() { return "100 Ton Hopper"; }

@@ -11,7 +11,11 @@ public class EntityNorthwesternEl24 extends ElectricTrain {
 
     public EntityNorthwesternEl24(World world) {
         super(world);
-        InsertTexture(0, "Northwestern Elevated Railroad");
+        setupTextureDescription();
+    }
+
+    public void setupTextureDescription() {
+        InsertTexture(0, "Northwestern Elevated Railroad - 24");
     }
 
     @Override

@@ -11,6 +11,11 @@ public class EntityCnOTender extends Tender {
 
     public EntityCnOTender(World world) {
         super(world, FluidRegistry.WATER, 0, Traincraft.traincraftRegistry.getTrainRecord(EntityCnOTender.class).getTankCapacity(), LiquidManager.WATER_FILTER);
+        setupTextureDescription();
+    }
+
+    public void setupTextureDescription() {
+        InsertTexture(0, "C&O 1601");
     }
 
     @Override

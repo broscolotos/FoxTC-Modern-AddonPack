@@ -14,7 +14,7 @@ public class EntityTamu8000 extends AbstractStandardTankerCar {
 
     @Override
     public void setupTextureDescription() {
-
+        InsertTexture(0, "White");
     }
 
     @Override

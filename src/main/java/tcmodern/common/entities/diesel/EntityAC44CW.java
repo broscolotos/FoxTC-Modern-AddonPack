@@ -2,6 +2,7 @@ package tcmodern.common.entities.diesel;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
+import tcmodern.common.library.TCModernSounds;
 import train.common.Traincraft;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
@@ -37,5 +38,5 @@ public class EntityAC44CW extends DieselTrain {
     public String getInventoryName() { return "AC44CW"; }
 
     @Override
-    public SoundRecord getSoundRecord() { return EnumSounds.DieselAC4400CW; }
+    public SoundRecord getSoundRecord() { return TCModernSounds.AC4400CW; }
 }

@@ -2,14 +2,20 @@ package tcmodern.common.entities.passenger;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
+import tcmodern.common.library.TCMLockoutGroups;
 import train.common.api.AbstractStandardFixedFreightCar;
 
 public class EntityHeavyweightBaggageCar extends AbstractStandardFixedFreightCar {
 
-    public EntityHeavyweightBaggageCar(World world) { super(world); }
+    public EntityHeavyweightBaggageCar(World world) {
+        super(world);
+        setupTextureDescription();
+    }
 
     @Override
-    public void setupTextureDescription() {}
+    public void setupTextureDescription() {
+        InsertTexture(0, "Spawnline Express - BM&S", TCMLockoutGroups.SpawnlineExpress);
+    }
 
 
     @Override

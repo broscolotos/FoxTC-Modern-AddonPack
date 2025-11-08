@@ -2,7 +2,9 @@ package tcmodern.common.core.handler;
 
 import tcmodern.common.TCModern;
 import tcmodern.common.entities.diesel.*;
+import tcmodern.common.entities.electric.EntityHandcar;
 import tcmodern.common.entities.electric.EntityNorthwesternEl24;
+import tcmodern.common.entities.electric.EntityRadioFlyer;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
@@ -134,7 +136,7 @@ public class TCModernRollingStockEntityHandler {
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.Hopper100Ton.item,
                 new TrainRecord("100 Ton Hopper", Entity100TonHopper.class, TCModernRollingStockItems.Hopper100Ton.item,
-                        EnumTrainType.OpenTopHopper, 4, new String[]{"Black"}, 13, 54),
+                        EnumTrainType.OpenTopHopper, 4, new String[]{"Black", "Yellow"}, 11, 54),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
@@ -156,6 +158,109 @@ public class TCModernRollingStockEntityHandler {
                 new TrainRecord("Northwestern El24", EntityNorthwesternEl24.class, TCModernRollingStockItems.NorthwesternEl24.item,
                         EnumTrainType.Electric, 0, new String[]{"Green"}, 12).setMHP(1327).setMaxSpeed(89).setFuelConsumption(10)
                         .setHeatingTime(170).setAccelerationRate(0.7).setBrakeRate(0.95).setBogieLocoPosition(-5.25),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NWClassAMain.item,
+                new TrainRecord("N&W Class A", EntityNWClassAMain.class, TCModernRollingStockItems.NWClassAMain.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 10).setWaterConsumption(200)
+                        .setTankCapacity(18000).setBogieLocoPosition(-3.375).setAccelerationRate(0.65).setHeatingTime(160)
+                        .setFuelConsumption(60).setMHP(6300).setMaxSpeed(110).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NWClassAFront.item,
+                new TrainRecord("N&W Class A Front", EntityNWClassAFront.class, TCModernRollingStockItems.NWClassAFront.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 13, 0).setWaterConsumption(1)
+                        .setTankCapacity(10000).setBogieLocoPosition(-2.5).setAccelerationRate(0.65).setHeatingTime(160)
+                        .setFuelConsumption(1).setMHP(6300).setMaxSpeed(110).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NWY6bMain.item,
+                new TrainRecord("N&W Y6b", EntityNWY6bMain.class, TCModernRollingStockItems.NWY6bMain.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 10).setWaterConsumption(200)
+                        .setTankCapacity(17000).setBogieLocoPosition(-3).setAccelerationRate(0.65).setHeatingTime(160)
+                        .setFuelConsumption(60).setMHP(5600).setMaxSpeed(80).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NWY6bFront.item,
+                new TrainRecord("N&W Y6b Front", EntityNWY6bFront.class, TCModernRollingStockItems.NWY6bFront.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 13, 0).setWaterConsumption(1)
+                        .setTankCapacity(10000).setBogieLocoPosition(-3).setAccelerationRate(0.65).setHeatingTime(160)
+                        .setFuelConsumption(1).setMHP(5600).setMaxSpeed(80).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.NWTender.item,
+                new TrainRecord("N&W Tender", EntityNWTender.class, TCModernRollingStockItems.NWTender.item,
+                        "tender", 1.5, new String[]{"Black"}, 14).setTankCapacity(20000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.EMDModel40.item,
+                new TrainRecord("EMD Model 40", EntityModel40.class, TCModernRollingStockItems.EMDModel40.item, EnumTrainType.Diesel,
+                        0, new String[]{"Orange"}, 16).setBrakeRate(0.95).setMaxSpeed(49).setMHP(300)
+                        .setFuelConsumption(45).setHeatingTime(180).setAccelerationRate(0.9).setBogieLocoPosition(-1.625)
+                        .setTankCapacity(4000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.HandCar.item,
+                new TrainRecord("Handcar", EntityHandcar.class, TCModernRollingStockItems.HandCar.item,
+                        EnumTrainType.Electric, 0, new String[]{"Brown"}, 18).setMHP(20).setMaxSpeed(30).setFuelConsumption(1)
+                        .setHeatingTime(1).setAccelerationRate(0.3).setBrakeRate(0.999).setBogieLocoPosition(-0.4),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.RadioFlyer.item,
+                new TrainRecord("Radio Flyer Handcar", EntityRadioFlyer.class, TCModernRollingStockItems.RadioFlyer.item,
+                        EnumTrainType.Electric, 0, new String[]{"Red"}, 18).setMHP(20).setMaxSpeed(30).setFuelConsumption(1)
+                        .setHeatingTime(1).setAccelerationRate(0.3).setBrakeRate(0.999).setBogieLocoPosition(-0.4),
+                Instance()
+        );
+        //edit
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.EMCE3A.item,
+                new TrainRecord("EMC E3A", EntityEMCE3A.class, TCModernRollingStockItems.EMCE3A.item, EnumTrainType.Diesel,
+                        0, new String[]{"White"}, 8, 0, 0.95, 188, 2100,
+                        45, 180, 0.8, -6.0625f, 15000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.EMCE3B.item,
+                new TrainRecord("EMC E3B", EntityEMCE3B.class, TCModernRollingStockItems.EMCE3B.item, EnumTrainType.Diesel,
+                        0, new String[]{"White"}, 8, 0, 0.95, 188, 2100,
+                        45, 180, 0.8, -5.9375f, 15000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.EMDF3A.item,
+                new TrainRecord("EMD F3A", EntityEMDF3A.class, TCModernRollingStockItems.EMDF3A.item, EnumTrainType.Diesel,
+                        0, new String[]{"Green", "Black", "Skin16", "Skin18", "Skin17", "Skin19", "Skin21", "Skin20", "Skin22", "Skin24", "Skin23"}, 11, 0, 0.95, 133, 1500,
+                        45, 180, 0.8, -4.3125f, 10000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.EMDF3B.item,
+                new TrainRecord("EMD F3B", EntityEMDF3B.class, TCModernRollingStockItems.EMDF3B.item, EnumTrainType.Diesel,
+                        0, new String[]{"Green", "Black", "Skin16", "Skin17", "Skin18"}, 11, 0, 0.95, 133, 1500,
+                        45, 180, 0.8, -4.3125f, 10000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.F40ph.item,
+                new TrainRecord("F40ph", EntityF40ph.class, TCModernRollingStockItems.F40ph.item, EnumTrainType.Diesel,
+                        0, new String[]{"Grey", "LightGrey"}, 11, 0, 0.95, 103, 3000,
+                        45, 180, 0.8, -4.3125f, 10000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.GEU18B.item,
+                new TrainRecord("GE U18B", EntityGEU18B.class, TCModernRollingStockItems.GEU18B.item, EnumTrainType.Diesel,
+                        0, new String[]{"Black", "Red", "Pink"}, 11, 0, 0.95, 113, 1800,
+                        45, 180, 0.8, -4.0625f, 10000),
                 Instance()
         );
     }

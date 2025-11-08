@@ -11,6 +11,11 @@ public class EntityPRRCoastToCoastTender extends Tender {
 
     public EntityPRRCoastToCoastTender(World world) {
         super(world, FluidRegistry.WATER, 0, Traincraft.traincraftRegistry.getTrainRecord(EntityPRRCoastToCoastTender.class).getTankCapacity(), LiquidManager.WATER_FILTER);
+        setupTextureDescription();
+    }
+
+    public void setupTextureDescription() {
+        InsertTexture(0, "Brunswick Green - Large keystone");
     }
 
     @Override

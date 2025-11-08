@@ -13,6 +13,11 @@ public class EntityAllegheny extends SteamTrain {
 
     public EntityAllegheny(World world) {
         super(world, Traincraft.traincraftRegistry.getTrainRecord(EntityAllegheny.class).getTankCapacity(), LiquidManager.WATER_FILTER);
+        setupTextureDescription();
+    }
+
+    public void setupTextureDescription() {
+        InsertTexture(0, "C&O 1601");
     }
 
     @Override
