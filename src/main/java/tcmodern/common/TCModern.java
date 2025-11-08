@@ -28,7 +28,7 @@ public class TCModern {
     public static CreativeTabTCModern tcModernTab;
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event) throws Exception {
         addonLog.info("preInit Addon Pack -" + Info.modName);
         tcModernTab = new tcmodern.common.creativetabs.CreativeTabTCModern(CreativeTabs.getNextID(), "TC Modern");
 

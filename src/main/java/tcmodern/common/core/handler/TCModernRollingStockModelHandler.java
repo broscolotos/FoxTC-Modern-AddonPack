@@ -1,10 +1,12 @@
 package tcmodern.common.core.handler;
 
+import fexcraft.fvtm.BOBRollingStockModel;
 import tcmodern.client.render.locomotive.diesel.*;
 import tcmodern.client.render.locomotive.electric.ModelHandCar;
 import tcmodern.client.render.locomotive.electric.ModelNorthwesternEl24;
 import tcmodern.client.render.locomotive.electric.ModelRadioFlyerHandcar;
 import tcmodern.client.render.locomotive.steam.*;
+import tcmodern.client.DetailRegistry;
 import tcmodern.client.render.rollingstock.freight.hopper.*;
 import tcmodern.client.render.rollingstock.freight.tanks.*;
 import tcmodern.client.render.rollingstock.passenger.*;
@@ -20,6 +22,7 @@ import tcmodern.common.entities.passenger.*;
 import tcmodern.common.entities.steam.*;
 import tcmodern.common.entities.tender.*;
 import tcmodern.common.library.Info;
+import tmt.Vec3f;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 
@@ -29,7 +32,7 @@ public class TCModernRollingStockModelHandler {
     /**
      * Only setup Model Register calls from here or you will crash the server.
      */
-    public TCModernRollingStockModelHandler() {
+    public TCModernRollingStockModelHandler() throws Exception {
         final String modID = Info.modID;
         /* SAMPLE
         Traincraft.traincraftRegistry
@@ -284,7 +287,10 @@ public class TCModernRollingStockModelHandler {
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMDF3A.class, new ModelEMDF3A(),
+                        new TrainRenderRecord(modID, EntityEMDF3A.class,
+                                new BOBRollingStockModel(modID, "models/diesel/ModelEMDF3A.bob", new boolean[] {false, true, true})
+                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.121875f,0,0), null, null)
+                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.190625f, 0, 0), null, null),
                                 "EMDF3A_",
                                 new float[] {-2.121875f, 0.1875f, 0}, new float[] {0, 180, 180},null,
                                 "smoke", new ArrayList<double[]>() { { add(new double[]{1.77D, 1.42D, 0.0D}); add(new double[]{0.7D, 1.42D, 0.0D}); } },
