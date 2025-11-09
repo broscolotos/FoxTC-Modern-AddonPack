@@ -6,11 +6,13 @@ package tcmodern.client.render.locomotive.diesel;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
+import tcmodern.client.DetailRegistry;
 import tcmodern.client.render.locomotive.bogies.Model3aBlomberg;
 import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 import tmt.Tessellator;
+import tmt.Vec3f;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.7.5 &copy; 2025 - Fexcraft.net<br>
@@ -1991,8 +1993,7 @@ public class ModelEMCE3A extends FVTMFormatBase {
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPushMatrix();
-		Tessellator.bindTexture(new ResourceLocation(Info.modID,"textures/trains/bogies/3a_blomberg_bogie.png"));
-		GL11.glTranslatef(-2.965625f,0,0);
+		GL11.glTranslatef(f,0,0);
 		truck.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glTranslatef(6.0625f, 0, 0);
 		truck.render(entity, f, f1, f2, f3, f4, f5);

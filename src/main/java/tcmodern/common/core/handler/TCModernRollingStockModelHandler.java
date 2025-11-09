@@ -200,7 +200,7 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(Info.modID, EntityNWY6bMain.class, new ModelNWY6bMain(),
                                 "NWY6b_",
-                                new float[] {1.25f, 0.1875f, 0.25f}, new float[] {0, 0, 180},null,
+                                new float[] {1f, 0.1875f, 0.25f}, new float[] {0, 0, 180},null,
                                 "largesmoke",
                                 new ArrayList<double[]>() { {
                                     add(new double[] { -4.125D, 1.875D, 0.0D }); }
@@ -215,7 +215,7 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityNWY6bFront.class, new ModelNWY6bFront(),
                                 "NWY6b_",
-                                new float[] {1.25f, 0.1875f, -0.25f}, new float[] {0, 180, 180},null,
+                                new float[] {0.75f, 0.1875f, -0.25f}, new float[] {0, 180, 180},null,
                                 null, null, "explode",
                                 new ArrayList<double[]>() { { add(new double[] { 1.9375D, -0.1875D, 0.625D }); } },
                                 0, 2)
@@ -255,7 +255,10 @@ public class TCModernRollingStockModelHandler {
         //edit
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMCE3A.class, new ModelEMCE3A(),
+                        new TrainRenderRecord(modID, EntityEMCE3A.class,
+                            new BOBRollingStockModel(modID, "models/diesel/ModelEMCE3A.bob", new boolean[] {false, true, true})
+                            .addDetail(DetailRegistry.blomberg3a, DetailRegistry.blomberg3a_black, new Vec3f(-2.965625, 0, 0), null, null)
+                            .addDetail(DetailRegistry.blomberg3a, DetailRegistry.blomberg3a_black, new Vec3f(3.096875, 0, 0), null, null),
                             "EMCE3A_",
                             new float[] {-2.965625f, 0.1875f, 0}, new float[] {0, 180, 180},null,
                             "smoke", new ArrayList<double[]>() {

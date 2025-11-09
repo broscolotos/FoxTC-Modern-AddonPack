@@ -30,6 +30,6 @@ public class EntityNWY6bMain extends SteamTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 0.75F; }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 3.25, 0.625, 0.5); }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 3.5, 0.625, 0.5); }
 
 }
