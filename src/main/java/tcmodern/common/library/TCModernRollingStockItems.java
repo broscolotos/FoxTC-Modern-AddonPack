@@ -39,10 +39,10 @@ public enum TCModernRollingStockItems {
     HandCar("other/Handcar", ELECTRIC, "Handcar"),
     RadioFlyer("other/RadioFlyer", ELECTRIC, "Radio Flyer Handcar"),
     EMDModel40("diesel/EMDModel40", DIESEL, "EMD Model 40"),
-    EMCE3A("diesel/EMCE3B", DIESEL, "EMC E3A"),
+    EMCE3A("diesel/EMCE3A", DIESEL, "EMC E3A"),
     EMCE3B("diesel/EMCE3B", DIESEL, "EMC E3B"),
     EMDF3A("diesel/EMDF3A", DIESEL, "EMD F3A"),
-    EMDF3B("diesel/EMDE3B", DIESEL, "EMD F3B"),
+    EMDF3B("diesel/EMDF3B", DIESEL, "EMD F3B"),
     F40ph("diesel/F40ph", DIESEL, "F40ph"),
     GEU18B("diesel/GEU18B", DIESEL, "GE U18B"),
     ;
