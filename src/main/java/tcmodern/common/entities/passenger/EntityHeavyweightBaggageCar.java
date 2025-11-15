@@ -14,7 +14,8 @@ public class EntityHeavyweightBaggageCar extends AbstractStandardFixedFreightCar
 
     @Override
     public void setupTextureDescription() {
-        InsertTexture(0, "Spawnline Express - BM&S", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(0, "Pullman");
+        InsertTexture(1, "Spawnline Express - BM&S", TCMLockoutGroups.SpawnlineExpress);
     }
 
 

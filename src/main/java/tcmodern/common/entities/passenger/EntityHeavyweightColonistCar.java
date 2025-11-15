@@ -14,9 +14,10 @@ public class EntityHeavyweightColonistCar extends AbstractPassengerCar {
     }
 
     public void setupTextureDescription() {
-        InsertTexture(0, "Spawnline Express - IRC", TCMLockoutGroups.SpawnlineExpress);
-        InsertTexture(1, "Spawnline Express - W&R", TCMLockoutGroups.SpawnlineExpress);
-        InsertTexture(2, "Spawnline Express - CCC&STL", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(0, "Pullman");
+        InsertTexture(1, "Spawnline Express - IRC", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(2, "Spawnline Express - W&R", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(3, "Spawnline Express - CCC&STL", TCMLockoutGroups.SpawnlineExpress);
     }
 
     @Override

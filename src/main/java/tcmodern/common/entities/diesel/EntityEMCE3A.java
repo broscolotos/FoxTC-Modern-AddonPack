@@ -2,10 +2,6 @@ package tcmodern.common.entities.diesel;
 
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
-import tcmodern.client.render.locomotive.diesel.ModelEMCE3A;
-import tcmodern.common.library.Info;
-import train.client.render.register.ITrainRenderRecord;
-import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
@@ -13,7 +9,6 @@ import train.common.core.util.TraincraftUtil;
 import train.common.library.EnumSounds;
 import train.common.library.sounds.SoundRecord;
 
-import java.util.ArrayList;
 
 public class EntityEMCE3A extends DieselTrain {
 

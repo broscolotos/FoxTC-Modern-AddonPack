@@ -65,31 +65,31 @@ public class TCModernRollingStockEntityHandler {
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightTailCar.item,
                 new TrainRecord("Heavyweight Tail Car", EntityHeavyweightTailCar.class, TCModernRollingStockItems.HeavyweightTailCar.item,
-                        EnumTrainType.Passenger, 1, new String[]{"Blue"},8),
+                        EnumTrainType.Passenger, 1, new String[]{"Green", "Blue"},8),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightColonistCar.item,
                 new TrainRecord("Heavyweight Colonist Car", EntityHeavyweightColonistCar.class, TCModernRollingStockItems.HeavyweightColonistCar.item,
-                        EnumTrainType.Passenger, 1, new String[]{"Blue", "LightBlue", "Skin16"},8),
+                        EnumTrainType.Passenger, 1, new String[]{"Green", "Blue", "LightBlue", "Skin16"},8),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightDinerCar.item,
                 new TrainRecord("Heavyweight Diner Car", EntityHeavyweightDinerCar.class, TCModernRollingStockItems.HeavyweightDinerCar.item,
-                        EnumTrainType.Passenger, 1, new String[]{"Blue", "LightBlue"},8),
+                        EnumTrainType.Passenger, 1, new String[]{"Green", "Blue", "LightBlue"},8),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightCombineCar.item,
                 new TrainRecord("Heavyweight Combine Car", EntityHeavyweightCombineCar.class, TCModernRollingStockItems.HeavyweightCombineCar.item,
-                        "passenger/combine", 1, new String[]{"Blue"},8).setCargoCapacity(27),
+                        "passenger/combine", 1, new String[]{"Green", "Blue"},8).setCargoCapacity(27),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightBaggageCar.item,
                 new TrainRecord("Heavyweight Baggage Car", EntityHeavyweightBaggageCar.class, TCModernRollingStockItems.HeavyweightBaggageCar.item,
-                        "freight", 1, new String[]{"Blue"},8).setCargoCapacity(54),
+                        "freight", 1, new String[]{"Green", "Blue"},8).setCargoCapacity(54),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
@@ -108,7 +108,7 @@ public class TCModernRollingStockEntityHandler {
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.WoodenHopper40Ton.item,
                 new TrainRecord("40 Ton Wooden Hopper", Entity40TonWoodenHopper.class, TCModernRollingStockItems.WoodenHopper40Ton.item,
-                        EnumTrainType.OpenTopHopper, 1.5, new String[]{"Brown"}, 14, 27),
+                        EnumTrainType.OpenTopHopper, 1.5, new String[]{"Brown", "Skin16", "Green", "Red", "Grey", "LightGrey"}, 14, 27),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(

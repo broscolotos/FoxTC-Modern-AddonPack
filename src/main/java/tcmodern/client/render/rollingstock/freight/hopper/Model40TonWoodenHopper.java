@@ -6,6 +6,7 @@ package tcmodern.client.render.rollingstock.freight.hopper;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
+import tcmodern.client.DetailRegistry;
 import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
 import tcmodern.common.entities.freight.hoppers.Entity40TonWoodenHopper;
 import tcmodern.common.entities.tender.EntityNYCPT2Tender;
@@ -14,6 +15,7 @@ import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 import tmt.Tessellator;
 import tmt.Vec3f;
+import train.common.api.AbstractTrains;
 
 /** This file was exported via the FVTM Exporter v1.5 of<br>
  *  FMT (Fex's Modelling Toolbox) v.2.7.5 &copy; 2025 - Fexcraft.net<br>
@@ -665,7 +667,6 @@ public class Model40TonWoodenHopper extends FVTMFormatBase {
 		groups.add(Loads);
 	}
 
-	Model40TonWoodenHopperBogie bogie = new Model40TonWoodenHopperBogie();
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
@@ -692,15 +693,19 @@ public class Model40TonWoodenHopper extends FVTMFormatBase {
 				}
 			}
 		}
-		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie.png"));
+		if (((AbstractTrains) entity).getColor() == 3) {
+			Tessellator.bindTexture(DetailRegistry.bogie40TonRed);
+		} else {
+			Tessellator.bindTexture(DetailRegistry.bogie40TonGrey);
+		}
 
 		GL11.glPushMatrix();
 		GL11.glTranslatef(0.8125f,0,0);
-		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.bogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
 		GL11.glTranslatef(-0.8125f,0,0);
-		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.bogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}
 }

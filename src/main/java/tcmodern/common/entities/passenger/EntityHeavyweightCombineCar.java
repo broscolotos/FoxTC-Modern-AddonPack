@@ -12,7 +12,8 @@ public class EntityHeavyweightCombineCar extends AbstractPassengerCombineCar {
 
     @Override
     public void setupTextureDescription() {
-        InsertTexture(0, "Spawnline Express - ASR", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(0, "Pullman");
+        InsertTexture(1, "Spawnline Express - ASR", TCMLockoutGroups.SpawnlineExpress);
     }
 
     @Override
