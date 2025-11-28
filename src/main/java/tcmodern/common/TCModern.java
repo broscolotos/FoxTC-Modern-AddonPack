@@ -44,7 +44,9 @@ public class TCModern {
     }
 
     @EventHandler
-    public void load(FMLInitializationEvent event) { addonLog.info("load Addon Pack -" + Info.modName); }
+    public void load(FMLInitializationEvent event) {
+        addonLog.info("load Addon Pack -" + Info.modName);
+    }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {

@@ -33,7 +33,7 @@ configFile.withReader {
 }
 
 
-version = "1.0.0"
+version = "0.1.2"
 group= "src.tcmodern" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "TCModern"
 

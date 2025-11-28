@@ -71,7 +71,7 @@ public class TCModernRollingStockEntityHandler {
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.HeavyweightColonistCar.item,
                 new TrainRecord("Heavyweight Colonist Car", EntityHeavyweightColonistCar.class, TCModernRollingStockItems.HeavyweightColonistCar.item,
-                        EnumTrainType.Passenger, 1, new String[]{"Green", "Blue", "LightBlue", "Skin16"},8),
+                        EnumTrainType.Passenger, 1, new String[]{"Green", "Blue", "LightBlue", "Skin16", "Skin17"},8),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
