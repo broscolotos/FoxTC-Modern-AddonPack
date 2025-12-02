@@ -5,7 +5,6 @@ import train.common.utils.lockout.ILockoutGroup;
 
 public enum TCMLockoutGroups implements ILockoutGroup {
     SpawnlineExpress(),
-    DrexelCo("b57bdcf8-561b-426e-9603-5a8ad35f9375")
     ;
 
 

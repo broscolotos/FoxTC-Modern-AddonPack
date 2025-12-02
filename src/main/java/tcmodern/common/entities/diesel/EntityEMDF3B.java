@@ -1,13 +1,20 @@
 package tcmodern.common.entities.diesel;
 
+import fexcraft.fvtm.BOBRollingStockModel;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
+import tcmodern.client.DetailRegistry;
+import tcmodern.common.library.Info;
+import tmt.Vec3f;
+import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.DieselTrain;
 import train.common.api.LiquidManager;
 import train.common.core.util.TraincraftUtil;
 import train.common.library.EnumSounds;
 import train.common.library.sounds.SoundRecord;
+
+import java.util.ArrayList;
 
 public class EntityEMDF3B extends DieselTrain {
 
@@ -36,5 +43,18 @@ public class EntityEMDF3B extends DieselTrain {
 
     @Override
     public SoundRecord getSoundRecord() { return EnumSounds.DieselF3B; }
+
+    @Override
+    public void onRenderInsertRecord() {
+        BOBRollingStockModel model = new BOBRollingStockModel(Info.modID, "models/diesel/ModelEMDF3B.bob", new boolean[] {false, true, true});
+        model.getDetailInformation(0).addModel(DetailRegistry.modelBlombergB, new Vec3f(-2.15625,0,0), null, null, DetailRegistry.textureBlombergB_black)
+            .addModel(DetailRegistry.modelBlombergB, new Vec3f(2.15625, 0, 0), null, null, DetailRegistry.textureBlombergB_black);
+
+        Traincraft.traincraftRegistry.RegisterRollingStockModel(new TrainRenderRecord(Info.modID, EntityEMDF3B.class,
+            model,"EMDF3B_", new float[] {-2.15625f, 0.1875f, 0}, new float[] {0, 0, 180},null,
+            "smoke", new ArrayList<double[]>() { { add(new double[]{3.5D, 1.42D, 0.0D}); add(new double[]{2.45D, 1.42D, 0.0D}); } },
+            null, null, 5, 0)
+        );
+    }
 
 }

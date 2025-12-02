@@ -4,13 +4,9 @@ package tcmodern.client.render.rollingstock.freight.hopper;
 
 
 import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import tcmodern.client.DetailRegistry;
-import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
 import tcmodern.common.entities.freight.hoppers.Entity40TonWoodenHopper;
-import tcmodern.common.entities.tender.EntityNYCPT2Tender;
-import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 import tmt.Tessellator;
@@ -694,18 +690,18 @@ public class Model40TonWoodenHopper extends FVTMFormatBase {
 			}
 		}
 		if (((AbstractTrains) entity).getColor() == 3) {
-			Tessellator.bindTexture(DetailRegistry.bogie40TonRed);
+			Tessellator.bindTexture(DetailRegistry.textureBogie40TonRed);
 		} else {
-			Tessellator.bindTexture(DetailRegistry.bogie40TonGrey);
+			Tessellator.bindTexture(DetailRegistry.textureBogie40TonGrey);
 		}
 
 		GL11.glPushMatrix();
 		GL11.glTranslatef(0.8125f,0,0);
-		DetailRegistry.bogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.modelBogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
 		GL11.glTranslatef(-0.8125f,0,0);
-		DetailRegistry.bogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.modelBogie40Ton.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}
 }

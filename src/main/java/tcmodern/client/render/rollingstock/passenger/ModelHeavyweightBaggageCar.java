@@ -2571,11 +2571,11 @@ public class ModelHeavyweightBaggageCar extends FVTMFormatBase {
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/trains/bogies/pullman_palace_bogie.png"));
 		GL11.glPushMatrix();
-		GL11.glTranslatef(3.875f,0,0);
+		GL11.glTranslatef(3.875f,0.02734375f,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
-		GL11.glTranslatef(-3.875f,0,0);
+		GL11.glTranslatef(-3.875f,0.02734375f,0);
 		bogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}

@@ -1,16 +1,12 @@
 package tcmodern.common.entities.passenger;
 
 import net.minecraft.entity.item.EntityMinecart;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import tcmodern.common.library.TCMLockoutGroups;
-import train.common.api.AbstractPassengerCar;
-import train.common.api.EntityRollingStock;
-import train.common.api.IPassenger;
+import train.common.api.AbstractWorkCart;
 import train.common.core.util.TraincraftUtil;
 
-public class EntityHeavyweightDinerCar extends AbstractPassengerCar {
+public class EntityHeavyweightDinerCar extends AbstractWorkCart {
 
     public EntityHeavyweightDinerCar(World world) {
         super(world);

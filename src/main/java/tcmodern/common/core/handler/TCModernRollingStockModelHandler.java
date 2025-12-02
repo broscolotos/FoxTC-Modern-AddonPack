@@ -92,21 +92,13 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityHeavyweightCombineCar.class, new ModelHeavyweightCombineCar(),
                                 "Heavyweight_Combine_",
-                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
+                                new float[] {0, 0.21484375f, 0}, new float[] {0, 0, 180}, null)
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityHeavyweightBaggageCar.class, new ModelHeavyweightBaggageCar(),
                                 "Heavyweight_Baggage_",
-                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityAC44CW.class, new ModelAC44CW(),
-                                "AC44CW_",
-                                new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},null, "smoke",
-                                new ArrayList<double[]>() { { add(new double[]{1.59375D, 1.4D, 0.0D}); } },
-                                null, null, 5, 0)
+                                new float[] {0, 0.21484375f, 0}, new float[] {0, 0, 180}, null)
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
@@ -252,88 +244,5 @@ public class TCModernRollingStockModelHandler {
                                 new float[] {-0.2f, 0.1875f, 0}, new float[] {0, 180, 180},null,
                                 null, null, null, null, 0, 0)
                 );
-        //edit
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMCE3A.class,
-                            new BOBRollingStockModel(modID, "models/diesel/ModelEMCE3A.bob", new boolean[] {false, true, true})
-                            .addDetail(DetailRegistry.blomberg3a, DetailRegistry.blomberg3a_black, new Vec3f(-2.965625, 0, 0), null, null)
-                            .addDetail(DetailRegistry.blomberg3a, DetailRegistry.blomberg3a_black, new Vec3f(3.096875, 0, 0), null, null),
-                            "EMCE3A_",
-                            new float[] {-2.965625f, 0.1875f, 0}, new float[] {0, 180, 180},null,
-                            "smoke", new ArrayList<double[]>() {
-                            {
-                                add(new double[]{0.48D, 1.42D, 0.0D}); add(new double[]{0.73D, 1.42D, 0.0D});
-                                add(new double[]{1.08D, 1.42D, 0.0D}); add(new double[]{1.33D, 1.42D, 0.0D});
-                                add(new double[]{3.3D, 1.42D, 0.0D}); add(new double[]{3.55D, 1.42D, 0.0D});
-                                add(new double[]{3.9D, 1.42D, 0.0D}); add(new double[]{4.15D, 1.42D, 0.0D});
-                            }
-
-                        },
-                        null, null, 5, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMCE3B.class,
-                                new BOBRollingStockModel(modID, "models/diesel/ModelEMCE3B.bob", new boolean[] {false, true, true})
-                                        .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.96875,0,0), null, null)
-                                        .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.96875, 0, 0), null, null),
-                            "EMCE3B_",
-                            new float[] {-2.96875f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                            "smoke", new ArrayList<double[]>() {
-                            {
-                                add(new double[]{1.53D, 1.42D, 0.0D}); add(new double[]{1.78D, 1.42D, 0.0D});
-                                add(new double[]{2.16D, 1.42D, 0.0D}); add(new double[]{2.43D, 1.42D, 0.0D});
-                                add(new double[]{4.35D, 1.42D, 0.0D}); add(new double[]{4.6D, 1.42D, 0.0D});
-                                add(new double[]{4.95D, 1.42D, 0.0D}); add(new double[]{5.2D, 1.42D, 0.0D});
-                            }
-
-                        },
-                        null, null, 5, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMDF3A.class,
-                                new BOBRollingStockModel(modID, "models/diesel/ModelEMDF3A.bob", new boolean[] {false, true, true})
-                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.121875,0,0), null, null)
-                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.190625, 0, 0), null, null),
-                                "EMDF3A_",
-                                new float[] {-2.121875f, 0.1875f, 0}, new float[] {0, 180, 180},null,
-                                "smoke", new ArrayList<double[]>() { { add(new double[]{1.77D, 1.42D, 0.0D}); add(new double[]{0.7D, 1.42D, 0.0D}); } },
-                                null, null, 5, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityEMDF3B.class,
-                                new BOBRollingStockModel(modID, "models/diesel/ModelEMDF3B.bob", new boolean[] {false, true, true})
-                                        .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.15625,0,0), null, null)
-                                        .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.15625, 0, 0), null, null),
-                                "EMDF3B_",
-                                new float[] {-2.15625f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                "smoke", new ArrayList<double[]>() { { add(new double[]{3.5D, 1.42D, 0.0D}); add(new double[]{2.45D, 1.42D, 0.0D}); } },
-                                null, null, 5, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityF40ph.class, new BOBRollingStockModel(modID, "models/diesel/ModelEMDF40ph.bob", new boolean[] {false, true, true})
-                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.1640625, 0, 0), null, null)
-                                .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.1484375, 0, 0), null, null),
-                                "F40ph_",
-                                new float[] {-2.1484375f, 0.1875f, 0}, new float[] {0, 180, 180},null,
-                                "smoke", new ArrayList<double[]>() { { add(new double[]{2.8D, 1.38D, 0.0D}); } },
-                                null, null, 5, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                    new TrainRenderRecord(modID, EntityGEU18B.class,
-                            new BOBRollingStockModel(modID, "models/diesel/ModelGEU18B.bob", new boolean[] {false, true, true})
-                                    .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(-2.0234375, 0, 0), null, null)
-                                    .addDetail(DetailRegistry.blombergB, DetailRegistry.blombergB_black, new Vec3f(2.0390625, 0, 0), null, null),
-                            "GEU18B_",
-                            new float[] {-2.0234375f, 0.1875f, 0}, new float[] {0, 180, 180},null,
-                            "smoke", new ArrayList<double[]>() { { add(new double[]{1.13D, 1.38D, 0.0D}); } },
-                            null, null, 5, 0)
-                );
-
     }
 }
