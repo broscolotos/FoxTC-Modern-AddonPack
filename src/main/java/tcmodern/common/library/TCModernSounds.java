@@ -7,7 +7,7 @@ import train.common.library.sounds.SoundRecord;
 public class TCModernSounds {
 
     //STEAM
-    public static final SoundRecord L3AMohawk = new SoundRecord(EntityL3aMohawk.class, " ", 1F, "steam_run", 0.2F, 20, "steam_idle2", 0.2F, 24, true, "steambell_3", 19, new String[] {"nathan_5chime_1"});
+    public static final SoundRecord L3AMohawk = new SoundRecord(EntityL3aMohawk.class, " ", 1F, "steam_run", 0.2F, 20, "steam_idle2", 0.2F, 24, true, "steambell_3", 19, new String[] {"nathan_5chime_1", "nathan_5chime_1", "nathan_5chime_1", "nathan_5chime_1", "nathan_5chime_1", "nathan_5chime_1"});
     public static final SoundRecord PRRT1 = new SoundRecord(EntityPRRT1.class, " ", 1F, "steam_run", 0.2F, 20, "steam_idle2", 0.2F, 24, true, "steambell_3", 19, new String[] {Info.modID + ":PRR_Passenger3Chime"});
 
     //DIESEL

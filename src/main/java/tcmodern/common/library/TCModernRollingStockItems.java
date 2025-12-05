@@ -14,7 +14,7 @@ public enum TCModernRollingStockItems {
     //minecraftTemplateUntradeable("template-icon", STEAM)
     L3aMohawk("steam/L3aMohawk", STEAM, "l3aMohawk"),
     NYC46ft4inTender("tender/NYC46ft", FREIGHT, "NYC46ft4inTender"),
-    NYC40ft3inTender("tender/NYC46ft", FREIGHT, "NYC40ft3inTender"),
+    NYC40ft3inTender("tender/NYC40ft", FREIGHT, "NYC40ft3inTender"),
     NYCPT2Tender("tender/NYCPT2", FREIGHT, "NYCPT2Tender"),
     HeavyweightTailCar("passenger/heavyweightTail", PASSENGER, "HeavyweightTailCar"),
     HeavyweightColonistCar("passenger/heavyweightColonist", PASSENGER, "HeavyweightColonistCar"),
