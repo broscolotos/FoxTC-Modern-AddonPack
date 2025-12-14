@@ -20,7 +20,7 @@ public class EntityHeavyweightCombineCar extends AbstractPassengerCombineCar {
     public String getInventoryName() { return "Heavyweight Combine Car"; }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 0, 0.17); }
+    public double getAdditionalYOffset() { return 0.17F; }
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 5.5625F; }
