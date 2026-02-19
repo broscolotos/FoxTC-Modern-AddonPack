@@ -14,7 +14,11 @@ import train.common.core.util.TraincraftUtil;
 import train.common.enums.LockoutGroup;
 import train.common.library.EnumSounds;
 import train.common.library.sounds.SoundRecord;
+import train.common.overlaytexture.EnumOverlayFonts;
+import train.common.overlaytexture.OTSpecificationDynamic;
+import train.common.overlaytexture.OverlayTextureManager;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 public class EntityGEU18B extends DieselTrain {
@@ -22,6 +26,23 @@ public class EntityGEU18B extends DieselTrain {
     public EntityGEU18B(World world) {
         super(world, Traincraft.traincraftRegistry.getTrainRecord(EntityGEU18B.class).getTankCapacity(), LiquidManager.dieselFilter());
         setupTextureDescription();
+
+        initOverlayTextures();
+        getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
+                "Cab Numbers",
+                36, 16, 4, EnumOverlayFonts.BapSansMid, 22f, OTSpecificationDynamic.AlignmentMode.ALIGN_CENTER_AND_FILL,
+                new Point[]{ new Point(1132, 140), new Point(0, 0)}
+        ));
+        getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
+                "Front Boards",
+                16, 8, 4, EnumOverlayFonts.BapSansMid, 8f, OTSpecificationDynamic.AlignmentMode.ALIGN_CENTER_AND_FILL,
+                new Point[]{ new Point(700, 484), new Point(1944, 496) }
+        ));
+        getOverlayTextureContainer().initOverlaySpecification(new OTSpecificationDynamic(
+                "Back Boards",
+                12, 8, 4, EnumOverlayFonts.BapSansMid, 7f, OTSpecificationDynamic.AlignmentMode.ALIGN_CENTER_AND_FILL,
+                new Point[]{ new Point(556, 488), new Point(676, 496) }
+        ));
     }
 
 

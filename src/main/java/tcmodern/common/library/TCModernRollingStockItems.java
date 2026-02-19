@@ -45,6 +45,9 @@ public enum TCModernRollingStockItems {
     EMDF3B("diesel/EMDF3B", DIESEL, "EMD F3B"),
     F40ph("diesel/F40ph", DIESEL, "F40ph"),
     GEU18B("diesel/GEU18B", DIESEL, "GE U18B"),
+    Shinkansen500Passenger("passenger/500seriesPassenger", PASSENGER, "Shinkansen 500-0 Passenger"),
+    Shinkansen500PassengerPower("passenger/500seriesPassengerPower", PASSENGER, "Shinkansen 500-0 Passenger Power"),
+    Shinkansen500Engine("electric/500seriesShinkansen", ELECTRIC, "Shinkansen 500-0 Engine"),
     ;
 
 

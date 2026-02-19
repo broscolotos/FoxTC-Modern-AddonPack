@@ -2,9 +2,7 @@ package tcmodern.common.core.handler;
 
 import tcmodern.common.TCModern;
 import tcmodern.common.entities.diesel.*;
-import tcmodern.common.entities.electric.EntityHandcar;
-import tcmodern.common.entities.electric.EntityNorthwesternEl24;
-import tcmodern.common.entities.electric.EntityRadioFlyer;
+import tcmodern.common.entities.electric.*;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
@@ -261,6 +259,26 @@ public class TCModernRollingStockEntityHandler {
                 new TrainRecord("GE U18B", EntityGEU18B.class, TCModernRollingStockItems.GEU18B.item, EnumTrainType.Diesel,
                         0, new String[]{"Black", "Red", "Pink"}, 11, 0, 0.95, 113, 1800,
                         45, 180, 0.8, -4.0625f, 10000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Shinkansen500Passenger.item,
+                new TrainRecord("Shinkansen 500-0 Passenger", EntityShinkansenPassengerCar.class,
+                        TCModernRollingStockItems.Shinkansen500Passenger.item, EnumTrainType.Passenger, 1, new String[]{"White"}, 8),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Shinkansen500PassengerPower.item,
+                new TrainRecord("Shinkansen 500-0 Power Car", EntityShinkansenPassengerPowerCar.class,
+                        TCModernRollingStockItems.Shinkansen500PassengerPower.item, EnumTrainType.Passenger, 1, new String[]{"White", "LightGrey"}, 8),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Shinkansen500Engine.item,
+                new TrainRecord("Shinkansen 500-0 Engine", EntityShinkansen500.class,
+                        TCModernRollingStockItems.Shinkansen500Engine.item, EnumTrainType.Electric, 0, new String[]{"White"}, 8)
+                        .setMHP(3058).setMaxSpeed(300).setFuelConsumption(40).setHeatingTime(250).setAccelerationRate(1.5)
+                        .setBrakeRate(0.98).setBogieLocoPosition(-7.125),
                 Instance()
         );
     }

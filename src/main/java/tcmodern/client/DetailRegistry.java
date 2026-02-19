@@ -8,6 +8,7 @@ import tcmodern.client.render.locomotive.parts.ModelAC44CWCompressor;
 import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
 import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
+import tmt.ModelRendererTurbo;
 
 public class DetailRegistry {
     //Blomberg B
@@ -30,4 +31,22 @@ public class DetailRegistry {
     //AC4400CW air compressor
     public static final FVTMFormatBase modelAC4400CWCompressor = new ModelAC44CWCompressor();
     public static final ResourceLocation textureAC4400CWCompressor = new ResourceLocation(Info.modID, "textures/trains/parts/ac44cw_compressor.png");
+
+    //Shinkansen Passenger details
+    public static final FVTMFormatBase modelShinkansenPowerShroud = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_Power.bob");
+    public static final FVTMFormatBase modelShinkansenPantoU = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_PantoU.bob");
+    public static final FVTMFormatBase modelShinkansenPantoD = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_PantoD.bob");
+    static {
+        for (FVTMFormatBase.TurboList l : modelShinkansenPantoD.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelShinkansenPantoD.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelShinkansenPantoU.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelShinkansenPantoD.fixRotation(arr, false, true, true);
+        }
+    }
 }

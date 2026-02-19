@@ -50,7 +50,9 @@ public class TCModernRollingStockModelHandler {
                         new TrainRenderRecord(modID, EntityL3aMohawk.class, new ModelL3aMohawk(),
                                 "l3a_mohawk_",
                                 new float[] {-2.5f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { 4.875D, 1.3875D, 0.0D }); } }, "explode", new ArrayList<double[]>() { { add(new double[] { 4.5, -0.1875D, 0.6875D }); } }, 10, 2)
+                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { 4.875D, 1.3875D, 0.0D }); } },
+                                "explode", new ArrayList<double[]>() { { add(new double[] { 4.5, -0.1875D, 0.6875D }); } },
+                                10, 2)
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
