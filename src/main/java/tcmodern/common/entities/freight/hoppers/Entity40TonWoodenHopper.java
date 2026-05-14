@@ -1,17 +1,23 @@
 package tcmodern.common.entities.freight.hoppers;
 
+import fexcraft.fvtm.BEOModelLoader;
+import fexcraft.fvtm.BOBRollingStockModel;
 import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.world.World;
 import train.common.api.AbstractStandardFixedFreightCar;
+import train.common.entity.CargoManager;
+import train.common.entity.CargoSpecification;
 
 public class Entity40TonWoodenHopper extends AbstractStandardFixedFreightCar {
 
-    public Entity40TonWoodenHopper(World world) { super(world); }
+    public Entity40TonWoodenHopper(World world) {
+        super(world);
+    }
 
     @Override
     public void setupTextureDescription() {
         InsertTexture(0, "Brown (Red Trucks)");
-        InsertTexture(1, "Brown (Grey Trucks");
+        InsertTexture(1, "Brown (Grey Trucks)");
         InsertTexture(2, "Green");
         InsertTexture(3, "Red");
         InsertTexture(4, "Black");

@@ -48,6 +48,7 @@ public enum TCModernRollingStockItems {
     Shinkansen500Passenger("passenger/500seriesPassenger", PASSENGER, "Shinkansen 500-0 Passenger"),
     Shinkansen500PassengerPower("passenger/500seriesPassengerPower", PASSENGER, "Shinkansen 500-0 Passenger Power"),
     Shinkansen500Engine("electric/500seriesShinkansen", ELECTRIC, "Shinkansen 500-0 Engine"),
+    Steel50ftBoxcar("freight/boxcars/Steel50ft", FREIGHT, "Steel 50ft Boxcar"),
     ;
 
 

@@ -1,12 +1,10 @@
 package tcmodern.common.core.handler;
 
-import fexcraft.fvtm.BOBRollingStockModel;
 import tcmodern.client.render.locomotive.diesel.*;
 import tcmodern.client.render.locomotive.electric.ModelHandCar;
 import tcmodern.client.render.locomotive.electric.ModelNorthwesternEl24;
 import tcmodern.client.render.locomotive.electric.ModelRadioFlyerHandcar;
 import tcmodern.client.render.locomotive.steam.*;
-import tcmodern.client.DetailRegistry;
 import tcmodern.client.render.rollingstock.freight.hopper.*;
 import tcmodern.client.render.rollingstock.freight.tanks.*;
 import tcmodern.client.render.rollingstock.passenger.*;
@@ -16,6 +14,7 @@ import tcmodern.common.entities.diesel.*;
 import tcmodern.common.entities.electric.EntityHandcar;
 import tcmodern.common.entities.electric.EntityNorthwesternEl24;
 import tcmodern.common.entities.electric.EntityRadioFlyer;
+import tcmodern.common.entities.freight.boxcars.EntitySteel50ftBoxcar;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;

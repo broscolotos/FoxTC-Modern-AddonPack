@@ -3,6 +3,7 @@ package tcmodern.common.core.handler;
 import tcmodern.common.TCModern;
 import tcmodern.common.entities.diesel.*;
 import tcmodern.common.entities.electric.*;
+import tcmodern.common.entities.freight.boxcars.*;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
@@ -279,6 +280,14 @@ public class TCModernRollingStockEntityHandler {
                         TCModernRollingStockItems.Shinkansen500Engine.item, EnumTrainType.Electric, 0, new String[]{"White"}, 8)
                         .setMHP(3058).setMaxSpeed(300).setFuelConsumption(40).setHeatingTime(250).setAccelerationRate(1.5)
                         .setBrakeRate(0.98).setBogieLocoPosition(-7.125),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Steel50ftBoxcar.item,
+                new TrainRecord("Steel 50ft Boxcar", EntitySteel50ftBoxcar.class, TCModernRollingStockItems.Steel50ftBoxcar.item,
+                        EnumTrainType.Boxcar, 4,
+                        new String[]{"Red", "Brown", "Pink", "Skin16", "White", "Green", "Lime", "Skin17", "Skin18", "Skin19", "Skin20"},
+                        11, 54),
                 Instance()
         );
     }

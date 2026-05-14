@@ -38,6 +38,7 @@ item.tcmodern:EMC E3B.name=EMC E3B
 item.tcmodern:Shinkansen 500-0 Engine.name=500 Series Shinkansen
 item.tcmodern:Shinkansen 500-0 Passenger.name=500 Series Shinkansen Passenger Car
 item.tcmodern:Shinkansen 500-0 Passenger Power.name=500 Series Shinkansen Power Car
+item.tcmodern:Steel 50ft Boxcar.name=Steel 50ft Boxcar
 
 <!-- ## ENTITY ## -->
 entity.tcmodern.L3a Mohawk.name=L3a Mohawk
@@ -73,7 +74,7 @@ entity.tcmodern.EMD F3A.name=EMD F3A
 entity.tcmodern.EMD F3B.name=EMD F3B
 entity.tcmodern.EMC E3A.name=EMC E3A
 entity.tcmodern.EMC E3B.name=EMC E3B
-
 entity.tcmodern.Shinkansen 500-0 Engine.name=500 Series Shinkansen
 entity.tcmodern.Shinkansen 500-0 Passenger.name=500 Series Shinkansen Passenger Car
 entity.tcmodern.Shinkansen 500-0 Passenger Power.name=500 Series Shinkansen Power Car
+entity.tcmodern.Steel 50ft Boxcar.name=Steel 50ft Boxcar

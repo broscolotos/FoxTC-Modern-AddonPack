@@ -3,11 +3,8 @@
 package tcmodern.client.render.rollingstock.freight.hopper;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
-import tcmodern.client.render.rollingstock.bogies.ModelGenericFreightBogie;
-import tcmodern.common.entities.freight.hoppers.Entity40TonWoodenHopper;
-import tcmodern.common.library.Info;
+import tcmodern.client.DetailRegistry;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 import tmt.Tessellator;
@@ -1970,9 +1967,6 @@ public class Model100TonHopper extends FVTMFormatBase {
 		groups.add(Coal2);
 	}
 
-
-	ModelGenericFreightBogie bogie = new ModelGenericFreightBogie();
-
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		int id = entity.getEntityId();
@@ -1989,14 +1983,14 @@ public class Model100TonHopper extends FVTMFormatBase {
 				}
 			}
 		}
-		Tessellator.bindTexture(new ResourceLocation(Info.modID, "textures/trains/bogies/GenericFreightTruck.png"));
+		Tessellator.bindTexture(DetailRegistry.textureGenericFreightBogieGray);
 		GL11.glPushMatrix();
 		GL11.glTranslatef(3.21875f,0.09375f,0f);
-		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.modelGenericFreightBogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 		GL11.glPushMatrix();
 		GL11.glTranslatef(-3.21875f,0.09375f,0);
-		bogie.render(entity, f, f1, f2, f3, f4, f5);
+		DetailRegistry.modelGenericFreightBogie.render(entity, f, f1, f2, f3, f4, f5);
 		GL11.glPopMatrix();
 	}
 }

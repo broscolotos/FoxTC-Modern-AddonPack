@@ -6,11 +6,19 @@ import tcmodern.client.render.locomotive.bogies.Model3aBlomberg;
 import tcmodern.client.render.locomotive.bogies.ModelBlombergB;
 import tcmodern.client.render.locomotive.parts.ModelAC44CWCompressor;
 import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
+import tcmodern.client.render.rollingstock.bogies.ModelGenericFreightBogie;
 import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 
 public class DetailRegistry {
+
+    //Generic Freight Trucks
+    public static final FVTMFormatBase modelGenericFreightBogie = new ModelGenericFreightBogie();
+    public static final ResourceLocation textureGenericFreightBogieGray = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/gray.png");
+    public static final ResourceLocation textureGenericFreightBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/black.png");
+
+
     //Blomberg B
     public static final FVTMFormatBase modelBlombergB = new ModelBlombergB();
     public static final ResourceLocation textureBlombergB_black = new ResourceLocation(Info.modID, "textures/trains/bogies/BlombergB_bogie.png");
