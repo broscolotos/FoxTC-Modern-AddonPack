@@ -18,20 +18,6 @@ public class TCModernRollingStockEntityHandler {
     private Object Instance() { return TCModern.instance; }
 
     public TCModernRollingStockEntityHandler() {
-        /* Sample
-
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockEntity
-                        (ItemIDs.minecartPassengerBlue.item,
-                                new TrainRecord("Passenger Blue", EntityPassengerBlue.class, ItemIDs.minecartPassengerBlue.item, EnumTrainType.Passenger, 1,
-                                        new String[]{"Blue", "Red", "Green", "White", "Black", "Cyan", "Orange", "Grey", "LightGrey", "LightBlue"},
-                                        18),
-                                Instance() // don't touch this line
-                        );
-         */
-
-        // Put Calls to RegisterRollingStockEntity below this.
-
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.L3aMohawk.item,
                 new TrainRecord("L3a Mohawk", EntityL3aMohawk.class, TCModernRollingStockItems.L3aMohawk.item,
@@ -271,7 +257,7 @@ public class TCModernRollingStockEntityHandler {
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.Shinkansen500PassengerPower.item,
                 new TrainRecord("Shinkansen 500-0 Power Car", EntityShinkansenPassengerPowerCar.class,
-                        TCModernRollingStockItems.Shinkansen500PassengerPower.item, EnumTrainType.Passenger, 1, new String[]{"White", "LightGrey"}, 8),
+                        TCModernRollingStockItems.Shinkansen500PassengerPower.item, EnumTrainType.Passenger, 1, new String[]{"White"}, 8),
                 Instance()
         );
         Traincraft.traincraftRegistry.RegisterRollingStockEntity(
