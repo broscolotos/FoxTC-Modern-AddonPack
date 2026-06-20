@@ -30,7 +30,7 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
 
  - [ ] migrate all remaining .java models to .bob
 
- - [ ]] set up lighting for all models
+ - [ ] set up lighting for all models
 
  - [ ] move alt load heights in 100 Ton Hopper to cargo manager
  - [ ] move load type of 40 Ton Hopper to cargo manager
