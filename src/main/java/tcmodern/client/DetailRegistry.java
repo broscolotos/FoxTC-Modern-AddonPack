@@ -4,6 +4,7 @@ import fexcraft.fvtm.BEOModelLoader;
 import net.minecraft.util.ResourceLocation;
 import tcmodern.client.render.locomotive.bogies.Model3aBlomberg;
 import tcmodern.client.render.locomotive.bogies.ModelBlombergB;
+import tcmodern.client.render.locomotive.bogies.ModelNorthwesternEl24Bogie;
 import tcmodern.client.render.locomotive.parts.ModelAC44CWCompressor;
 import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
 import tcmodern.client.render.rollingstock.bogies.ModelGenericFreightBogie;
@@ -66,4 +67,8 @@ public class DetailRegistry {
 
     public static final FVTMFormatBase modelHeavyweightDinerInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_Interior.bob");
     public static final FVTMFormatBase modelHeavyweightDinerInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_InteriorLP.bob");
+
+    //Northwestern El24 details
+    public static final ResourceLocation el24BogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/NorthwesternEl24_bogie.png");
+    public static final ModelNorthwesternEl24Bogie modelEl24Bogie = new ModelNorthwesternEl24Bogie();
 }

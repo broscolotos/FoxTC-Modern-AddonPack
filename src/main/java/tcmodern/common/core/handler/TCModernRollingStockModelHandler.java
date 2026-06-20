@@ -147,13 +147,6 @@ public class TCModernRollingStockModelHandler {
                 );
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityNorthwesternEl24.class, new ModelNorthwesternEl24(),
-                                "NorthwesternEI24_",
-                                new float[] {-2.625f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                null, null, null, null, 0, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityNWClassAMain.class, new ModelNWClassAMain(),
                                 "NWClassA_",
                                 new float[] {1f, 0.1875f, 0}, new float[] {0, 0, 180},null,
