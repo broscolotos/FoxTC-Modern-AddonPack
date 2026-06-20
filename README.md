@@ -11,13 +11,13 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
  - [x] texture noise for all Radio Flyer textures
  - [x] texture noise for all Handcar textures
  - [x] texture noise for all El24 textures
- - [ ] texture noise for all T1 textures
- - [ ] texture noise for all Coast-to-Coast textures
- - [ ] texture noise for all 100 Ton hopper textures
- - [ ] texture noise for all C&O Tender textures
- - [ ] texture noise for all Allegheny textures
- - [ ] texture noise for all Tamu 8000 textures
- - [ ] texture noise for all AC4400CW textures
+ - [x] texture noise for all T1 textures 
+ - [x] texture noise for all Coast-to-Coast textures
+ - [x] texture noise for all 100 Ton hopper textures
+ - [x] texture noise for all C&O Tender textures
+ - [x] texture noise for all Allegheny textures
+ - [x] texture noise for all Tamu 8000 textures
+ - [x] texture noise for all AC4400CW textures
  - [ ] texture noise for all Heavyweight Baggage textures
  - [ ] texture noise for all Heavyweight Combine textures
  - [ ] texture noise for all Heavyweight Diner textures
@@ -32,7 +32,7 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
 
  - [ ] set up lighting for all models
 
- - [ ] move alt load heights in 100 Ton Hopper to cargo manager
+ - [x] move alt load heights in 100 Ton Hopper to cargo manager
  - [ ] move load type of 40 Ton Hopper to cargo manager
 
  - [ ] verify seating positions

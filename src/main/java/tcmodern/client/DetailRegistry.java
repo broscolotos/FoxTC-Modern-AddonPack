@@ -2,13 +2,9 @@ package tcmodern.client;
 
 import fexcraft.fvtm.BEOModelLoader;
 import net.minecraft.util.ResourceLocation;
-import tcmodern.client.render.locomotive.bogies.Model3aBlomberg;
-import tcmodern.client.render.locomotive.bogies.ModelBlombergB;
-import tcmodern.client.render.locomotive.bogies.ModelNorthwesternEl24Bogie;
+import tcmodern.client.render.locomotive.bogies.*;
 import tcmodern.client.render.locomotive.parts.ModelAC44CWCompressor;
-import tcmodern.client.render.rollingstock.bogies.Model40TonWoodenHopperBogie;
-import tcmodern.client.render.rollingstock.bogies.ModelGenericFreightBogie;
-import tcmodern.client.render.rollingstock.bogies.ModelPullmanPalaceBogie;
+import tcmodern.client.render.rollingstock.bogies.*;
 import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
@@ -71,4 +67,24 @@ public class DetailRegistry {
     //Northwestern El24 details
     public static final ResourceLocation el24BogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/NorthwesternEl24_bogie.png");
     public static final ModelNorthwesternEl24Bogie modelEl24Bogie = new ModelNorthwesternEl24Bogie();
+
+    //PRR T1 details
+    public static final ModelPRRT1FrontBogie modelT1BogieFront = new ModelPRRT1FrontBogie();
+    public static final ModelPRRT1RearBogie modelT1BogieRear = new ModelPRRT1RearBogie();
+
+    //PRR Coast to Coast details
+    public static final ResourceLocation coastToCoastBogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/CoastToCoastTruck.png");
+    public static final ModelCoastToCoastTenderBogie modelCoastToCoastBogie = new ModelCoastToCoastTenderBogie();
+
+    //100 ton coal details
+    public static final FVTMFormatBase model100TonLoad = BEOModelLoader.loadModel(Info.modID + ":models/freight/addons/Model100TonHopperCoal.bob");
+    public static final FVTMFormatBase model100TonLoad2 = BEOModelLoader.loadModel(Info.modID + ":models/freight/addons/Model100TonHopperCoal2.bob");
+
+    //C&O Tender details
+    public static final ModelCnOTenderFrontBogie modelCnOTenderFrontBogie = new ModelCnOTenderFrontBogie();
+    public static final ModelCnOTenderRearBogie modelCnOTenderRearBogie = new ModelCnOTenderRearBogie();
+
+    //Allegheny details
+    public static final FVTMFormatBase modelAlleghenyFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyFrontBogie.bob");
+    public static final FVTMFormatBase modelAlleghenyRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyRearBogie.bob");
 }
