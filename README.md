@@ -4,11 +4,11 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
 ## TODO
  - [ ] recipes for everything
 
- - [ ] texture noise for all U18B textures
- - [ ] texture noise for all F40PH textures
- - [ ] texture noise for all E3A textures
- - [ ] texture noise for all E3B textures
- - [ ] texture noise for all Radio Flyer textures
+ - [x] texture noise for all U18B textures
+ - [x] texture noise for all F40PH textures
+ - [x] texture noise for all E3A textures
+ - [x] texture noise for all E3B textures
+ - [x] texture noise for all Radio Flyer textures
  - [ ] texture noise for all Handcar textures
  - [ ] texture noise for all El24 textures
  - [ ] texture noise for all T1 textures

@@ -1,9 +1,7 @@
 package tcmodern.common.core.handler;
 
 import tcmodern.client.render.locomotive.diesel.*;
-import tcmodern.client.render.locomotive.electric.ModelHandCar;
-import tcmodern.client.render.locomotive.electric.ModelNorthwesternEl24;
-import tcmodern.client.render.locomotive.electric.ModelRadioFlyerHandcar;
+import tcmodern.client.render.locomotive.electric.*;
 import tcmodern.client.render.locomotive.steam.*;
 import tcmodern.client.render.rollingstock.freight.hopper.*;
 import tcmodern.client.render.rollingstock.freight.tanks.*;
@@ -11,17 +9,14 @@ import tcmodern.client.render.rollingstock.passenger.*;
 import tcmodern.client.render.rollingstock.tender.*;
 
 import tcmodern.common.entities.diesel.*;
-import tcmodern.common.entities.electric.EntityHandcar;
-import tcmodern.common.entities.electric.EntityNorthwesternEl24;
-import tcmodern.common.entities.electric.EntityRadioFlyer;
-import tcmodern.common.entities.freight.boxcars.EntitySteel50ftBoxcar;
+import tcmodern.common.entities.electric.*;
 import tcmodern.common.entities.freight.hoppers.*;
 import tcmodern.common.entities.freight.tanks.*;
 import tcmodern.common.entities.passenger.*;
 import tcmodern.common.entities.steam.*;
 import tcmodern.common.entities.tender.*;
 import tcmodern.common.library.Info;
-import tmt.Vec3f;
+
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 
@@ -229,13 +224,6 @@ public class TCModernRollingStockModelHandler {
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, EntityHandcar.class, new ModelHandCar(),
                                 "HandCar_",
-                                new float[] {-0.2f, 0.1875f, 0}, new float[] {0, 180, 180},null,
-                                null, null, null, null, 0, 0)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityRadioFlyer.class, new ModelRadioFlyerHandcar(),
-                                "RadioFlyer_",
                                 new float[] {-0.2f, 0.1875f, 0}, new float[] {0, 180, 180},null,
                                 null, null, null, null, 0, 0)
                 );

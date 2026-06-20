@@ -5,7 +5,6 @@ import net.minecraft.entity.item.EntityMinecart;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import tcmodern.client.DetailRegistry;
-import tcmodern.client.render.rollingstock.passenger.ModelHeavyweightDinerCar;
 import tcmodern.common.library.Info;
 import tcmodern.common.library.TCMLockoutGroups;
 import tmt.Vec3f;
@@ -31,8 +30,6 @@ public class EntityHeavyweightDinerCar extends AbstractWorkCart {
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 5.5F; }
-
-
 
     @Override
     public void onRenderInsertRecord() {
