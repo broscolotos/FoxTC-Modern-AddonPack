@@ -21,8 +21,8 @@ public class EntityHeavyweightDinerCar extends AbstractWorkCart {
 
     public void setupTextureDescription() {
         InsertTexture(0, "Pullman");
-        InsertTexture(1, "Spawnline Express - CWL", TCMLockoutGroups.SpawnlineExpress);
-        InsertTexture(2, "Spawnline Express - MRKDM", TCMLockoutGroups.SpawnlineExpress);
+        InsertTexture(1, "Spawnline Express - CWL", TCMLockoutGroups.SPAWNLINEEXPRESS);
+        InsertTexture(2, "Spawnline Express - MRKDM", TCMLockoutGroups.SPAWNLINEEXPRESS);
     }
 
     @Override

@@ -18,10 +18,10 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
  - [x] texture noise for all Allegheny textures
  - [x] texture noise for all Tamu 8000 textures
  - [x] texture noise for all AC4400CW textures
- - [ ] texture noise for all Heavyweight Baggage textures
- - [ ] texture noise for all Heavyweight Combine textures
- - [ ] texture noise for all Heavyweight Diner textures
- - [ ] texture noise for all Heavyweight Colonist textures
+ - [x] texture noise for all Heavyweight Baggage textures
+ - [x] texture noise for all Heavyweight Combine textures
+ - [x] texture noise for all Heavyweight Diner textures
+ - [x] texture noise for all Heavyweight Colonist textures
  - [ ] texture noise for all Heavyweight Tail textures
  - [ ] texture noise for all NYC PT2 textures
  - [ ] texture noise for all NYC 40ft 3in textures
@@ -38,9 +38,9 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
  - [ ] verify seating positions
 
  - [x] LOD interior for Heavyweight Diner car
- - [ ] LOD interior for Heavyweight Colonist car
- - [ ] LOD interior for Heavyweight Combine car
- - [ ] LOD interior for Heavyweight Baggage car
+ - [x] LOD interior for Heavyweight Colonist car
+ - [x] LOD interior for Heavyweight Combine car
+ - [x] LOD interior for Heavyweight Baggage car
  - [ ] LOD interior for Heavyweight Tail car
 
  - [ ] import missing bros content

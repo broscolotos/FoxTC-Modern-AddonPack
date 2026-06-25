@@ -4,7 +4,7 @@ import train.common.utils.lockout.ILockoutGroup;
 
 
 public enum TCMLockoutGroups implements ILockoutGroup {
-    SpawnlineExpress(),
+    SPAWNLINEEXPRESS(),
     ;
 
 

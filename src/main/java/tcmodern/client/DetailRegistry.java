@@ -43,26 +43,19 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelShinkansenPantoU = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_PantoU.bob");
     public static final FVTMFormatBase modelShinkansenPantoD = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_PantoD.bob");
 
-    static {
-        for (FVTMFormatBase.TurboList l : modelShinkansenPantoD.groups) {
-            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
-            l.toArray(arr);
-            modelShinkansenPantoD.fixRotation(arr, false, true, true);
-        }
-
-        for (FVTMFormatBase.TurboList l : modelShinkansenPantoU.groups) {
-            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
-            l.toArray(arr);
-            modelShinkansenPantoD.fixRotation(arr, false, true, true);
-        }
-    }
-
     //Heavyweight details
     public static final ModelPullmanPalaceBogie modelPullmanPalaceBogie = new ModelPullmanPalaceBogie();
     public static final ResourceLocation pullmanPalaceBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/pullman_palace_bogie.png");
 
     public static final FVTMFormatBase modelHeavyweightDinerInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_Interior.bob");
     public static final FVTMFormatBase modelHeavyweightDinerInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_InteriorLP.bob");
+
+    public static final FVTMFormatBase modelHeavyweightCombineInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Combine_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightCombineInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Combine_InteriorLP.bob");
+
+    public static final FVTMFormatBase modelHeavyweightColonistInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Colonist_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightColonistInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Colonist_InteriorLP.bob");
+
 
     //Northwestern El24 details
     public static final ResourceLocation el24BogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/NorthwesternEl24_bogie.png");
@@ -87,4 +80,42 @@ public class DetailRegistry {
     //Allegheny details
     public static final FVTMFormatBase modelAlleghenyFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyFrontBogie.bob");
     public static final FVTMFormatBase modelAlleghenyRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyRearBogie.bob");
+
+
+    static {
+        for (FVTMFormatBase.TurboList l : modelShinkansenPantoD.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelShinkansenPantoD.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelShinkansenPantoU.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelShinkansenPantoU.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelHeavyweightCombineInterior.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightCombineInterior.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelHeavyweightCombineInteriorLP.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightCombineInteriorLP.fixRotation(arr, false, true, true);
+        }
+        for (FVTMFormatBase.TurboList l : modelHeavyweightColonistInterior.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightColonistInterior.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelHeavyweightColonistInteriorLP.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightColonistInteriorLP.fixRotation(arr, false, true, true);
+        }
+    }
 }
