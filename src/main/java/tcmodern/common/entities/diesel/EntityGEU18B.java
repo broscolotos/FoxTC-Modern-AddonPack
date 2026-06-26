@@ -53,7 +53,7 @@ public class EntityGEU18B extends DieselTrain {
     }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this,4.25, 0.4, -0.45); }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this,4.25, 0.25, -0.45); }
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 1.7F; }

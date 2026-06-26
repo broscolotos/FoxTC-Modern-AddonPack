@@ -22,11 +22,11 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
  - [x] texture noise for all Heavyweight Combine textures
  - [x] texture noise for all Heavyweight Diner textures
  - [x] texture noise for all Heavyweight Colonist textures
- - [ ] texture noise for all Heavyweight Tail textures
- - [ ] texture noise for all NYC PT2 textures
- - [ ] texture noise for all NYC 40ft 3in textures
- - [ ] texture noise for all NYC 46ft 4in textures
- - [ ] texture noise for all L3a Mohawk textures
+ - [x] texture noise for all Heavyweight Tail textures
+ - [x] texture noise for all NYC PT2 textures
+ - [x] texture noise for all NYC 40ft 3in textures
+ - [x] texture noise for all NYC 46ft 4in textures
+ - [x] texture noise for all L3a Mohawk textures
 
  - [ ] migrate all remaining .java models to .bob
 
@@ -35,13 +35,13 @@ FoxTC content pack for the Traincraft Modern art style. **ONLY COMPATIBLE WITH [
  - [x] move alt load heights in 100 Ton Hopper to cargo manager
  - [ ] move load type of 40 Ton Hopper to cargo manager
 
- - [ ] verify seating positions
+ - [x] verify seating positions
 
  - [x] LOD interior for Heavyweight Diner car
  - [x] LOD interior for Heavyweight Colonist car
  - [x] LOD interior for Heavyweight Combine car
  - [x] LOD interior for Heavyweight Baggage car
- - [ ] LOD interior for Heavyweight Tail car
+ - [x] LOD interior for Heavyweight Tail car
 
  - [ ] import missing bros content
  - [ ] import missing riggs content

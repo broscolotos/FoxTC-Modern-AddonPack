@@ -22,7 +22,7 @@ public class EntityModel40 extends DieselTrain {
     }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this,0.75, 0.2); }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this,0.75, 0.125, -0.25); }
 
     @Override
     public float getOptimalDistance(EntityMinecart cart) { return 0.625F; }

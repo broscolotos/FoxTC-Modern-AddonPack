@@ -37,7 +37,7 @@ public class EntityAlleghenyFront extends SteamTrain {
     public float getOptimalDistance(EntityMinecart cart) { return 0.875F; }
 
     @Override
-    public void updateRiderPosition() { TraincraftUtil.updateRider(this, -1.125, 0.375); }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 3.25, 0.5); }
 
     @Override
     public void onRenderInsertRecord() {

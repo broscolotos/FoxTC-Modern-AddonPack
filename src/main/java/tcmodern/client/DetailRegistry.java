@@ -16,7 +16,6 @@ public class DetailRegistry {
     public static final ResourceLocation textureGenericFreightBogieGray = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/gray.png");
     public static final ResourceLocation textureGenericFreightBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/black.png");
 
-
     //Blomberg B
     public static final FVTMFormatBase modelBlombergB = new ModelBlombergB();
     public static final ResourceLocation textureBlombergB_black = new ResourceLocation(Info.modID, "textures/trains/bogies/BlombergB_bogie.png");
@@ -34,6 +33,13 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelGEHiAD = BEOModelLoader.loadModel(Info.modID + ":models/diesel/bogies/ModelGEHi-AD.bob");
     public static final ResourceLocation textureGEHiADBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/ge_hi-ad_black.png");
 
+    //PT2 Bogie
+    public static final FVTMFormatBase modelPT2TenderBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelPT2TenderBogie.bob");
+
+    //40ft3in Bogie
+    public static final FVTMFormatBase modelNYC3AxleBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelNYC3AxleTenderBogie.bob");
+    public static ResourceLocation textureNYC3AxleBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/nyc_3axle_tender_bogie.png");
+
     //AC4400CW air compressor
     public static final FVTMFormatBase modelAC4400CWCompressor = new ModelAC44CWCompressor();
     public static final ResourceLocation textureAC4400CWCompressor = new ResourceLocation(Info.modID, "textures/trains/parts/ac44cw_compressor.png");
@@ -47,15 +53,17 @@ public class DetailRegistry {
     public static final ModelPullmanPalaceBogie modelPullmanPalaceBogie = new ModelPullmanPalaceBogie();
     public static final ResourceLocation pullmanPalaceBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/pullman_palace_bogie.png");
 
-    public static final FVTMFormatBase modelHeavyweightDinerInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_Interior.bob");
-    public static final FVTMFormatBase modelHeavyweightDinerInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Diner_InteriorLP.bob");
+    public static final FVTMFormatBase modelHeavyweightDinerInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN diner/ModelCN73Diner_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightDinerInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN diner/ModelCN73Diner_InteriorLP.bob");
 
-    public static final FVTMFormatBase modelHeavyweightCombineInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Combine_Interior.bob");
-    public static final FVTMFormatBase modelHeavyweightCombineInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Combine_InteriorLP.bob");
+    public static final FVTMFormatBase modelHeavyweightCombineInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN combine/ModelCN73Combine_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightCombineInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN combine/ModelCN73Combine_InteriorLP.bob");
 
-    public static final FVTMFormatBase modelHeavyweightColonistInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Colonist_Interior.bob");
-    public static final FVTMFormatBase modelHeavyweightColonistInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/ModelCN73Colonist_InteriorLP.bob");
+    public static final FVTMFormatBase modelHeavyweightColonistInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN colonist/ModelCN73Colonist_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightColonistInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN colonist/ModelCN73Colonist_InteriorLP.bob");
 
+    public static final FVTMFormatBase modelHeavyweightTailInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN tail/ModelCN73Tail_Interior.bob");
+    public static final FVTMFormatBase modelHeavyweightTailInteriorLP = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN tail/ModelCN73Tail_InteriorLP.bob");
 
     //Northwestern El24 details
     public static final ResourceLocation el24BogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/NorthwesternEl24_bogie.png");
@@ -80,6 +88,10 @@ public class DetailRegistry {
     //Allegheny details
     public static final FVTMFormatBase modelAlleghenyFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyFrontBogie.bob");
     public static final FVTMFormatBase modelAlleghenyRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyRearBogie.bob");
+
+    //Mohawk details
+    public static final FVTMFormatBase modelL3aFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aFrontBogie.bob");
+    public static final FVTMFormatBase modelL3aRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aRearBogie.bob");
 
 
     static {
@@ -116,6 +128,18 @@ public class DetailRegistry {
             ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
             l.toArray(arr);
             modelHeavyweightColonistInteriorLP.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelHeavyweightTailInterior.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightTailInterior.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelHeavyweightTailInteriorLP.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelHeavyweightTailInteriorLP.fixRotation(arr, false, true, true);
         }
     }
 }

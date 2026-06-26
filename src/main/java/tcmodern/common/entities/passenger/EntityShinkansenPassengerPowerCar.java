@@ -10,6 +10,7 @@ import tcmodern.common.library.Info;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
 import train.common.api.AbstractPassengerCar;
+import train.common.core.util.TraincraftUtil;
 import train.common.entity.CargoManager;
 import train.common.entity.CargoSpecification;
 import train.common.entity.cargoManagerProvider.CargoModelInstanceProvider;
@@ -48,10 +49,10 @@ public class EntityShinkansenPassengerPowerCar extends AbstractPassengerCar {
 
 
     @Override
-    public double getAdditionalYOffset() { return -0.15F; }
+    public void updateRiderPosition() { TraincraftUtil.updateRider(this, 4.4375, -0.25, -0.375); }
 
     @Override
-    public float getOptimalDistance(EntityMinecart cart) { return 5.1875F; }
+    public float getOptimalDistance(EntityMinecart cart) { return 1.53125F; }
 
     @Override
     public void onRenderInsertRecord() {
@@ -59,7 +60,7 @@ public class EntityShinkansenPassengerPowerCar extends AbstractPassengerCar {
         model.getDetailInformation(0).addModel(DetailRegistry.modelShinkansenPowerShroud, null, null, null, (ResourceLocation)null);
         Traincraft.traincraftRegistry.RegisterRollingStockModel(new TrainRenderRecord(
                 Info.modID, EntityShinkansenPassengerPowerCar.class, model, "Shinkansen500-0_Passenger_Power_",
-                new float[] {-0.4328125f, 0.15625f, 0}, new float[] {0, 180, 180}, null
+                new float[] {-3.25f, 0.15625f, 0}, new float[] {0, 0, 180}, null
         ));
     }
 }

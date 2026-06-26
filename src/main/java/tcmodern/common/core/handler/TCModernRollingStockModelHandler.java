@@ -4,13 +4,11 @@ import tcmodern.client.render.locomotive.diesel.*;
 import tcmodern.client.render.locomotive.electric.*;
 import tcmodern.client.render.locomotive.steam.*;
 import tcmodern.client.render.rollingstock.freight.hopper.*;
-import tcmodern.client.render.rollingstock.passenger.*;
 import tcmodern.client.render.rollingstock.tender.*;
 
 import tcmodern.common.entities.diesel.*;
 import tcmodern.common.entities.electric.*;
 import tcmodern.common.entities.freight.hoppers.*;
-import tcmodern.common.entities.passenger.*;
 import tcmodern.common.entities.steam.*;
 import tcmodern.common.entities.tender.*;
 import tcmodern.common.library.Info;
@@ -37,39 +35,7 @@ public class TCModernRollingStockModelHandler {
                           null)
          */
         // Put Calls to RegisterRollingStockModel below this.
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityL3aMohawk.class, new ModelL3aMohawk(),
-                                "l3a_mohawk_",
-                                new float[] {-2.5f, 0.1875f, 0}, new float[] {0, 0, 180},null,
-                                "largesmoke", new ArrayList<double[]>() { { add(new double[] { 4.875D, 1.3875D, 0.0D }); } },
-                                "explode", new ArrayList<double[]>() { { add(new double[] { 4.5, -0.1875D, 0.6875D }); } },
-                                10, 2)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityNYC46ft4inTender.class, new ModelNYC46ft4inTender(),
-                                "NYC46ft4inTender_",
-                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityNYC40ft3inTender.class, new ModelNYC40ft3inTender(),
-                                "NYC40ft3inTender_",
-                                new float[] {0.125f, 0.1875f, 0}, new float[] {0, 0, 180}, null)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityNYCPT2Tender.class, new ModelNYCPT2Tender(),
-                                "NYCPT2Tender_",
-                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
-                );
-        Traincraft.traincraftRegistry
-                .RegisterRollingStockModel(
-                        new TrainRenderRecord(modID, EntityHeavyweightTailCar.class, new ModelHeavyweightTailCar(),
-                                "Heavyweight_Tail_",
-                                new float[] {0, 0.1875f, 0}, new float[] {0, 0, 180}, null)
-                );
+
         Traincraft.traincraftRegistry
                 .RegisterRollingStockModel(
                         new TrainRenderRecord(modID, Entity40TonWoodenHopper.class, new Model40TonWoodenHopper(),
