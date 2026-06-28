@@ -28,7 +28,7 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelBogie40Ton = BEOModelLoader.load(Info.modID + ":models/freight/bogies/Model40TonWoodenHopperBogie.bob");
     public static final FVTMFormatBase model40TonLoad = BEOModelLoader.load(Info.modID + ":models/freight/addons/Model40TonWoodenHopperLoad.bob");
     public static final ResourceLocation textureBogie40TonRed = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie.png");
-    public static final ResourceLocation textureBogie40TonGray = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie_grey.png");
+    public static final ResourceLocation textureBogie40TonGray = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie_gray.png");
 
     //GE Hi-AD
     public static final FVTMFormatBase modelGEHiAD = BEOModelLoader.loadModel(Info.modID + ":models/diesel/bogies/ModelGEHi-AD.bob");

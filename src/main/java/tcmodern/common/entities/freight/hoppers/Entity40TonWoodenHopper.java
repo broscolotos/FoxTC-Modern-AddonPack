@@ -37,11 +37,11 @@ public class Entity40TonWoodenHopper extends AbstractStandardFreightCar {
     @Override
     public void setupTextureDescription() {
         InsertTexture(0, "Brown (Red Trucks)");
-        InsertTexture(1, "Brown (Grey Trucks)");
+        InsertTexture(1, "Brown (Gray Trucks)");
         InsertTexture(2, "Green");
         InsertTexture(3, "Red");
         InsertTexture(4, "Black");
-        InsertTexture(5, "Grey");
+        InsertTexture(5, "Gray");
     }
 
     @Override
