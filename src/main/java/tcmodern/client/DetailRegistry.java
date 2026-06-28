@@ -74,6 +74,9 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelT1BogieFront = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelPRRT1FrontBogie.bob");
     public static final FVTMFormatBase modelT1BogieRear = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelPRRT1RearBogie.bob");
 
+    //PRR I1sa details
+    public static final FVTMFormatBase modelI1saBogieFront = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelPRRI1saFrontBogie.bob");
+
     //PRR Coast to Coast details
     public static final ResourceLocation coastToCoastBogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/CoastToCoastTruck.png");
     public static final FVTMFormatBase modelCoastToCoastBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelCoastToCoastTenderBogie.bob");
@@ -94,6 +97,11 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelL3aFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aFrontBogie.bob");
     public static final FVTMFormatBase modelL3aRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aRearBogie.bob");
 
+    //U1f details
+    public static final FVTMFormatBase modelCNU1fFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelCNU1fFrontBogie.bob");
+    public static final FVTMFormatBase modelCNU1fRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelCNU1fRearBogie.bob");
+    public static final FVTMFormatBase modelCNU1fTenderBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelCNU1fTenderBogie.bob");
+
     //NW Tender details
     public static final FVTMFormatBase modelNWTenderFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelNWTenderFrontBogie.bob");
     public static final FVTMFormatBase modelNWTenderRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelNWTenderRearBogie.bob");
@@ -106,6 +114,10 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelNWClassARearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWClassARearBogie.bob");
     public static final FVTMFormatBase modelNWClassAFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWClassAFrontBogie.bob");
 
+    //Hoki 10000 details
+    public static final FVTMFormatBase modelHoki10000Coal = BEOModelLoader.loadModel(Info.modID + ":models/freight/addons/ModelHoki10000Coal.bob");
+    public static final FVTMFormatBase modelJNRFreightBogie = BEOModelLoader.loadModel(Info.modID + ":models/freight/bogies/ModelJNRFreightBogie.bob");
+    public static final ResourceLocation textureJNRFreightBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/JNRFreightBogieBlack.png");
 
     static {
         for (FVTMFormatBase.TurboList l : modelShinkansenPantoD.groups) {
@@ -153,6 +165,13 @@ public class DetailRegistry {
             ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
             l.toArray(arr);
             modelHeavyweightTailInteriorLP.fixRotation(arr, false, true, true);
+        }
+
+        for (FVTMFormatBase.TurboList l : modelCNU1fTenderBogie.groups) {
+            ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
+            l.toArray(arr);
+            modelCNU1fTenderBogie.fixRotation(arr, false, true, true);
+
         }
     }
 }

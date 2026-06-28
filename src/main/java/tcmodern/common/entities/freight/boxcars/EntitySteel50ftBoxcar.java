@@ -91,7 +91,7 @@ public class EntitySteel50ftBoxcar extends AbstractStandardFixedFreightCar {
 
     @Override
     public void onRenderInsertRecord() {
-        BOBRollingStockModel model = new BOBRollingStockModel(Info.modID, "models/freight/steel50ft.bob", new boolean[] {false, true, true});
+        BOBRollingStockModel model = new BOBRollingStockModel(Info.modID, "models/freight/ModelSteel50ftBoxcar.bob", new boolean[] {false, true, true});
         model.getDetailInformation(0)
                 .addModel(DetailRegistry.modelGenericFreightBogie, new Vec3f(-2.576171875f,0,0), null, null, DetailRegistry.textureGenericFreightBogieBlack)
                 .addModel(DetailRegistry.modelGenericFreightBogie, new Vec3f(2.576171875f, 0, 0), null, null, DetailRegistry.textureGenericFreightBogieBlack);

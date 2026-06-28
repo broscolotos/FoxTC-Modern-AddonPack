@@ -11,7 +11,9 @@ import tcmodern.common.entities.steam.*;
 import tcmodern.common.entities.tender.*;
 import tcmodern.common.library.TCModernRollingStockItems;
 import train.common.Traincraft;
+import train.common.api.stock.TenderStoragePolicy;
 import train.common.library.EnumTrainType;
+import train.common.library.register.TenderRecord;
 import train.common.library.register.TrainRecord;
 
 public class TCModernRollingStockEntityHandler {
@@ -276,5 +278,42 @@ public class TCModernRollingStockEntityHandler {
                         11, 54),
                 Instance()
         );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.CNU1f.item,
+                new TrainRecord("CN U1f", EntityCNU1f.class, TCModernRollingStockItems.CNU1f.item,
+                        EnumTrainType.Steam, 0, new String[] {"Green"}, 10)
+                        .setCargoCapacity(0).setBrakeRate(0.95).setMaxSpeed(177).setMHP(3548).setFuelConsumption(60)
+                        .setHeatingTime(160).setAccelerationRate(0.65).setBogieLocoPosition(-5).setTankCapacity(10000)
+                        .setWaterConsumption(200).setSecondaryCapacity(3000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.CNU1fTender.item,
+                new TenderRecord("CN U1f Tender", EntityCNU1fTender.class, TCModernRollingStockItems.CNU1fTender.item)
+                    .setSecondaryTankCapacity(23000).setTenderStoragePolicy(TenderStoragePolicy.DUAL_CHAMBER_ONLY)
+                    .setTrainType(EnumTrainType.Tender).setMass(1.5).setTankCapacity(50000)
+                    .setColors(new String[]{"Green"}).setGuiRenderScale(14),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Hoki10000.item,
+                new TrainRecord("100 Ton Hopper", EntityHoki10000.class, TCModernRollingStockItems.Hoki10000.item,
+                        EnumTrainType.OpenTopHopper, 4, new String[]{"Black"}, 11, 54),
+                Instance()
+        );
+        /*Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.PRRI1sa.item,
+                new TrainRecord("PRR I1sa", EntityPRRI1sa.class, TCModernRollingStockItems.PRRI1sa.item,
+                        EnumTrainType.Steam, 0, new String[]{"Black"}, 7, 0).setWaterConsumption(200)
+                        .setTankCapacity(10000).setBogieLocoPosition(-5.375).setAccelerationRate(0.65).setHeatingTime(160).setFuelConsumption(60)
+                        .setMHP(3345).setMaxSpeed(80).setBrakeRate(0.95),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.PRRCoastToCoastNormalTender.item,
+                new TrainRecord("PRR Coast To Coast Normal Tender", EntityPRRCoastToCoastNormalTender.class, TCModernRollingStockItems.PRRCoastToCoastNormalTender.item,
+                        "tender", 1.5, new String[]{"Black"}, 14).setTankCapacity(20000),
+                Instance()
+        );*/
     }
 }

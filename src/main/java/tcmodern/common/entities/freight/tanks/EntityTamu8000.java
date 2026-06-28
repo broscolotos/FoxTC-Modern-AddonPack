@@ -2,10 +2,7 @@ package tcmodern.common.entities.freight.tanks;
 
 import fexcraft.fvtm.BOBRollingStockModel;
 import net.minecraft.entity.item.EntityMinecart;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import tcmodern.client.DetailRegistry;
-import tcmodern.common.entities.tender.EntityCnOTender;
 import tcmodern.common.library.Info;
 import train.client.render.register.TrainRenderRecord;
 import train.common.Traincraft;
@@ -20,7 +17,7 @@ public class EntityTamu8000 extends AbstractStandardTankerCar {
 
     @Override
     public void setupTextureDescription() {
-        InsertTexture(0, "White");
+        InsertTexture(0, "JNR Tamu 8000 (White)");
     }
 
     @Override
