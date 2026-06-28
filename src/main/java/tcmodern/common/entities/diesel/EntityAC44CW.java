@@ -50,9 +50,9 @@ public class EntityAC44CW extends DieselTrain {
     public void onRenderInsertRecord() {
         BOBRollingStockModel model = new BOBRollingStockModel(Info.modID, "models/diesel/ModelAC4400CW.bob", new boolean[] {false, true, true});
         model.getDetailInformation(0)
-            .addModel(DetailRegistry.modelGEHiAD, new Vec3f(-3.3125f,0,0), null, null, DetailRegistry.textureGEHiADBlack)
-            .addModel(DetailRegistry.modelGEHiAD, new Vec3f(3.3125f, 0, 0), new Vec3f(0, 180, 0), null, DetailRegistry.textureGEHiADBlack)
-            .addModel(DetailRegistry.modelAC4400CWCompressor, new Vec3f(-0.41015625f, -0.044921875f, -0.18164062f), null, new Vec3f(0.7f, 0.7f, 0.7f), DetailRegistry.textureAC4400CWCompressor);
+            .addModel(DetailRegistry.modelGEHiAD, 7, new Vec3f(-3.3125f,0,0), null, null, DetailRegistry.textureGEHiADBlack)
+            .addModel(DetailRegistry.modelGEHiAD, 7, new Vec3f(3.3125f, 0, 0), new Vec3f(0, 180, 0), null, DetailRegistry.textureGEHiADBlack)
+            .addModel(DetailRegistry.modelAC4400CWCompressor, 7, new Vec3f(-0.41015625f, -0.044921875f, -0.18164062f), null, new Vec3f(0.7f, 0.7f, 0.7f), DetailRegistry.textureAC4400CWCompressor);
 
         Traincraft.traincraftRegistry.RegisterRollingStockModel(new TrainRenderRecord(Info.modID, EntityAC44CW.class,
             model,"AC44CW_", new float[] {-3.3125f, 0.1875f, 0}, new float[] {0, 0, 180},

@@ -1,33 +1,34 @@
 package tcmodern.client;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import fexcraft.fvtm.BEOModelLoader;
 import net.minecraft.util.ResourceLocation;
-import tcmodern.client.render.locomotive.bogies.*;
-import tcmodern.client.render.locomotive.parts.ModelAC44CWCompressor;
-import tcmodern.client.render.rollingstock.bogies.*;
 import tcmodern.common.library.Info;
 import tmt.FVTMFormatBase;
 import tmt.ModelRendererTurbo;
 
+@SideOnly(Side.CLIENT)
 public class DetailRegistry {
 
     //Generic Freight Trucks
-    public static final FVTMFormatBase modelGenericFreightBogie = new ModelGenericFreightBogie();
+    public static final FVTMFormatBase modelGenericFreightBogie = BEOModelLoader.load(Info.modID + ":models/freight/bogies/ModelGenericFreightBogie.bob");
     public static final ResourceLocation textureGenericFreightBogieGray = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/gray.png");
     public static final ResourceLocation textureGenericFreightBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/generic/black.png");
 
     //Blomberg B
-    public static final FVTMFormatBase modelBlombergB = new ModelBlombergB();
+    public static final FVTMFormatBase modelBlombergB = BEOModelLoader.load(Info.modID + ":models/diesel/bogies/ModelBlombergB.bob");
     public static final ResourceLocation textureBlombergB_black = new ResourceLocation(Info.modID, "textures/trains/bogies/BlombergB_bogie.png");
 
     //Blomberg 3a
-    public static final FVTMFormatBase modelBlomberg3a = new Model3aBlomberg();
+    public static final FVTMFormatBase modelBlomberg3a = BEOModelLoader.load(Info.modID + ":models/diesel/bogies/Model3aBlomberg.bob");
     public static final ResourceLocation textureBlomberg3a_black = new ResourceLocation(Info.modID,"textures/trains/bogies/3a_blomberg_bogie.png");
 
     //40 ton hopper trucks
-    public static final Model40TonWoodenHopperBogie modelBogie40Ton = new Model40TonWoodenHopperBogie();
+    public static final FVTMFormatBase modelBogie40Ton = BEOModelLoader.load(Info.modID + ":models/freight/bogies/Model40TonWoodenHopperBogie.bob");
+    public static final FVTMFormatBase model40TonLoad = BEOModelLoader.load(Info.modID + ":models/freight/addons/Model40TonWoodenHopperLoad.bob");
     public static final ResourceLocation textureBogie40TonRed = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie.png");
-    public static final ResourceLocation textureBogie40TonGrey = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie_grey.png");
+    public static final ResourceLocation textureBogie40TonGray = new ResourceLocation(Info.modID, "textures/trains/bogies/40_ton_hopper_bogie_grey.png");
 
     //GE Hi-AD
     public static final FVTMFormatBase modelGEHiAD = BEOModelLoader.loadModel(Info.modID + ":models/diesel/bogies/ModelGEHi-AD.bob");
@@ -41,7 +42,7 @@ public class DetailRegistry {
     public static ResourceLocation textureNYC3AxleBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/nyc_3axle_tender_bogie.png");
 
     //AC4400CW air compressor
-    public static final FVTMFormatBase modelAC4400CWCompressor = new ModelAC44CWCompressor();
+    public static final FVTMFormatBase modelAC4400CWCompressor = BEOModelLoader.loadModel(Info.modID + ":models/diesel/parts/ModelAC44CWCompressor.bob");
     public static final ResourceLocation textureAC4400CWCompressor = new ResourceLocation(Info.modID, "textures/trains/parts/ac44cw_compressor.png");
 
     //Shinkansen Passenger details
@@ -50,7 +51,7 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelShinkansenPantoD = BEOModelLoader.loadModel(Info.modID + ":models/passenger/addons/ModelShinkansen500-0_Passenger_PantoD.bob");
 
     //Heavyweight details
-    public static final ModelPullmanPalaceBogie modelPullmanPalaceBogie = new ModelPullmanPalaceBogie();
+    public static final FVTMFormatBase modelPullmanPalaceBogie = BEOModelLoader.loadModel(Info.modID + ":models/passenger/bogies/ModelPullmanPalaceBogie.bob");
     public static final ResourceLocation pullmanPalaceBogieBlack = new ResourceLocation(Info.modID, "textures/trains/bogies/pullman_palace_bogie.png");
 
     public static final FVTMFormatBase modelHeavyweightDinerInterior = BEOModelLoader.loadModel(Info.modID + ":models/passenger/CN diner/ModelCN73Diner_Interior.bob");
@@ -67,23 +68,23 @@ public class DetailRegistry {
 
     //Northwestern El24 details
     public static final ResourceLocation el24BogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/NorthwesternEl24_bogie.png");
-    public static final ModelNorthwesternEl24Bogie modelEl24Bogie = new ModelNorthwesternEl24Bogie();
+    public static final FVTMFormatBase modelEl24Bogie = BEOModelLoader.loadModel(Info.modID + ":models/electric/bogies/ModelNorthwesternEl24Bogie.bob");
 
     //PRR T1 details
-    public static final ModelPRRT1FrontBogie modelT1BogieFront = new ModelPRRT1FrontBogie();
-    public static final ModelPRRT1RearBogie modelT1BogieRear = new ModelPRRT1RearBogie();
+    public static final FVTMFormatBase modelT1BogieFront = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelPRRT1FrontBogie.bob");
+    public static final FVTMFormatBase modelT1BogieRear = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelPRRT1RearBogie.bob");
 
     //PRR Coast to Coast details
     public static final ResourceLocation coastToCoastBogieTexture = new ResourceLocation(Info.modID, "textures/trains/bogies/CoastToCoastTruck.png");
-    public static final ModelCoastToCoastTenderBogie modelCoastToCoastBogie = new ModelCoastToCoastTenderBogie();
+    public static final FVTMFormatBase modelCoastToCoastBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelCoastToCoastTenderBogie.bob");
 
     //100 ton coal details
     public static final FVTMFormatBase model100TonLoad = BEOModelLoader.loadModel(Info.modID + ":models/freight/addons/Model100TonHopperCoal.bob");
     public static final FVTMFormatBase model100TonLoad2 = BEOModelLoader.loadModel(Info.modID + ":models/freight/addons/Model100TonHopperCoal2.bob");
 
     //C&O Tender details
-    public static final ModelCnOTenderFrontBogie modelCnOTenderFrontBogie = new ModelCnOTenderFrontBogie();
-    public static final ModelCnOTenderRearBogie modelCnOTenderRearBogie = new ModelCnOTenderRearBogie();
+    public static final FVTMFormatBase modelCnOTenderFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelCnOTenderFrontBogie.bob");
+    public static final FVTMFormatBase modelCnOTenderRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelCnOTenderRearBogie.bob");
 
     //Allegheny details
     public static final FVTMFormatBase modelAlleghenyFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelAlleghenyFrontBogie.bob");
@@ -92,6 +93,18 @@ public class DetailRegistry {
     //Mohawk details
     public static final FVTMFormatBase modelL3aFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aFrontBogie.bob");
     public static final FVTMFormatBase modelL3aRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelL3aRearBogie.bob");
+
+    //NW Tender details
+    public static final FVTMFormatBase modelNWTenderFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelNWTenderFrontBogie.bob");
+    public static final FVTMFormatBase modelNWTenderRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/tender/bogies/ModelNWTenderRearBogie.bob");
+
+    //NW Y6b details
+    public static final FVTMFormatBase modelNWY6bRearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWY6bRearBogie.bob");
+    public static final FVTMFormatBase modelNWY6bFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWY6bFrontBogie.bob");
+
+    //NW Class A details
+    public static final FVTMFormatBase modelNWClassARearBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWClassARearBogie.bob");
+    public static final FVTMFormatBase modelNWClassAFrontBogie = BEOModelLoader.loadModel(Info.modID + ":models/steam/bogies/ModelNWClassAFrontBogie.bob");
 
 
     static {
