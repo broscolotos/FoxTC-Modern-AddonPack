@@ -52,6 +52,9 @@ public enum TCModernRollingStockItems {
     CNU1f("steam/CNU1f", STEAM, "CNU1f"),
     CNU1fTender("tender/CNU1fTender", FREIGHT, "CNU1fTender"),
     Hoki10000("freight/hoppers/Hoki10000", FREIGHT, "Hoki10000"),
+    GEU10B("diesel/GEU10B", DIESEL, "GEU10B"),
+    Superliner("passenger/Superliner", PASSENGER, "Superliner"),
+    SkytopSuperliner("passenger/SkytopSuperliner", PASSENGER, "SkytopSuperliner"),
     /*PRRI1sa("steam/PRRI1sa", FREIGHT, "PRR I1sa"),
     PRRCoastToCoastNormalTender("tender/PRRCoastToCoastNormal", FREIGHT, "PRR Coast To Coast Normal"),*/
     ;

@@ -301,7 +301,26 @@ public class TCModernRollingStockEntityHandler {
                         EnumTrainType.OpenTopHopper, 4, new String[]{"Black"}, 11, 54),
                 Instance()
         );
-        /*Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.GEU10B.item,
+                new TrainRecord("GE U10B", EntityGEU10B.class, TCModernRollingStockItems.GEU10B.item, EnumTrainType.Diesel,
+                        0, new String[]{"Red"}, 11, 0, 0.95, 64, 1050,
+                        45, 180, 0.8, -2.9125f, 6000),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.Superliner.item,
+                new TrainRecord("Superliner", EntitySuperliner.class, TCModernRollingStockItems.Superliner.item,
+                        EnumTrainType.Passenger, 1, new String[]{"Grey"},7).setBogieLocoPosition(-8.45703125),
+                Instance()
+        );
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
+                TCModernRollingStockItems.SkytopSuperliner.item,
+                new TrainRecord("Skytop Superliner", EntitySkytopSuperliner.class, TCModernRollingStockItems.SkytopSuperliner.item,
+                        EnumTrainType.Passenger, 1, new String[]{"Grey"},7).setBogieLocoPosition(-8.45703125),
+                Instance()
+        );/*
+        Traincraft.traincraftRegistry.RegisterRollingStockEntity(
                 TCModernRollingStockItems.PRRI1sa.item,
                 new TrainRecord("PRR I1sa", EntityPRRI1sa.class, TCModernRollingStockItems.PRRI1sa.item,
                         EnumTrainType.Steam, 0, new String[]{"Black"}, 7, 0).setWaterConsumption(200)

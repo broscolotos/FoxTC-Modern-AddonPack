@@ -119,6 +119,14 @@ public class DetailRegistry {
     public static final FVTMFormatBase modelJNRFreightBogie = BEOModelLoader.loadModel(Info.modID + ":models/freight/bogies/ModelJNRFreightBogie.bob");
     public static final ResourceLocation textureJNRFreightBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/JNRFreightBogieBlack.png");
 
+    //GE U10B details
+    public static final FVTMFormatBase modelGEU10BBogie = BEOModelLoader.loadModel(Info.modID + ":models/diesel/bogies/ModelU10BBogie.bob");
+    public static final ResourceLocation textureGEU10BBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/GEU10BBogie.png");
+
+    //Superliner details
+    public static final FVTMFormatBase modelSuperlinerBogie = BEOModelLoader.loadModel(Info.modID + ":models/passenger/bogies/ModelSuperlinerBogie.bob");
+    public static final ResourceLocation textureSuperlinerBogie = new ResourceLocation(Info.modID, "textures/trains/bogies/superliner_bogie.png");
+
     static {
         for (FVTMFormatBase.TurboList l : modelShinkansenPantoD.groups) {
             ModelRendererTurbo[] arr = new ModelRendererTurbo[l.size()];
